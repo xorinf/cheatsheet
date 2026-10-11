@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX (XMLHttpRequest), XML & JSON Dynamic Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-container">
+    <header class="page-header">
+      <h1>AJAX (XMLHttpRequest), XML & JSON Dynamic Display</h1>
+      <p>Demonstrates fetching external XML and JSON data asynchronously in the background and updating the webpage without reloading.</p>
+    </header>
+
+    <!-- ACTION BUTTONS -->
+    <div class="button-bar">
+      <button class="btn btn-xml" id="loadXmlBtn">1. Load XML via AJAX (XMLHttpRequest)</button>
+      <button class="btn btn-json" id="loadJsonBtn">2. Load JSON via AJAX (XMLHttpRequest)</button>
+      <button class="btn btn-reset" id="resetDisplayBtn">Clear Display</button>
+    </div>
+
+    <!-- READYSTATE & STATUS LIVE MONITOR -->
+    <div class="status-monitor">
+      <div class="status-item">
+        <span class="status-label">Request Type:</span>
+        <span id="reqType" class="status-val">Idle</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">XHR readyState:</span>
+        <span id="readyStateVal" class="status-val">0 (UNSENT)</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">HTTP Status:</span>
+        <span id="httpStatusVal" class="status-val">—</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Operation Status:</span>
+        <span id="opStatus" class="status-val status-idle">Ready to send request</span>
+      </div>
+    </div>
+
+    <!-- DISPLAY CONTAINER (DYNAMICALLY POPULATED) -->
+    <main class="content-display">
+      <div class="section-header">
+        <h2 id="outputTitle">Awaiting AJAX Request...</h2>
+        <span id="itemCountBadge" class="badge hidden">0 Items</span>
+      </div>
+
+      <!-- Rendered HTML Table / Cards -->
+      <div id="dataContainer" class="data-view">
+        <div class="placeholder-msg">
+          Click either button above to trigger an asynchronous HTTP request using <code>new XMLHttpRequest()</code>.
+        </div>
+      </div>
+
+      <!-- Raw Response Source Code Viewer -->
+      <details class="raw-details">
+        <summary>View Raw Server Response String (responseText / responseXML)</summary>
+        <pre><code id="rawCodeViewer">// Server response text will appear here...</code></pre>
+      </details>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

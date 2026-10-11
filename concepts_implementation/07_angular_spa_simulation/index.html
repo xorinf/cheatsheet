@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Concept Interactive Simulator (Single Page Application)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="angular-app-shell">
+    
+    <!-- ANGULAR BANNER -->
+    <header class="app-banner">
+      <div class="brand">
+        <span class="ng-badge">ANGULAR SPA</span>
+        <h1 id="appTitle">Loading...</h1>
+      </div>
+      <p class="banner-sub">Interactive simulator demonstrating Angular Templates, 4 Data Bindings, Directives (*ngIf, *ngFor), Pipes, and Service Injection in pure browser JavaScript.</p>
+    </header>
+
+    <!-- 4 DATA BINDINGS DEMONSTRATION CARDS -->
+    <section class="concept-breakdown">
+      <div class="concept-chip">
+        <span class="chip-title">1. Interpolation:</span>
+        <code>{{ title }}</code>
+      </div>
+      <div class="concept-chip">
+        <span class="chip-title">2. Property Binding:</span>
+        <code>[disabled]="isDisabled"</code>
+      </div>
+      <div class="concept-chip">
+        <span class="chip-title">3. Event Binding:</span>
+        <code>(click)="onAdd()"</code>
+      </div>
+      <div class="concept-chip">
+        <span class="chip-title">4. Two-Way Binding:</span>
+        <code>[(ngModel)]="search"</code>
+      </div>
+    </section>
+
+    <!-- MAIN SPA WORKSPACE -->
+    <div class="spa-grid">
+      
+      <!-- LEFT: TWO-WAY BINDING & ADD FORM -->
+      <aside class="panel">
+        <h3>Angular Component Controls</h3>
+
+        <!-- TWO-WAY DATA BINDING DEMO [(ngModel)] -->
+        <div class="control-box">
+          <label for="searchInput">Two-Way Data Binding <code>[(ngModel)]</code>:</label>
+          <input type="text" id="searchInput" placeholder="Search items in real-time...">
+          <div class="live-model-box">
+            <span>Model Property:</span>
+            <b id="liveSearchDisplay">""</b>
+          </div>
+        </div>
+
+        <!-- ADD ITEM FORM -->
+        <div class="control-box">
+          <h4>Event & Property Binding Form</h4>
+          
+          <label>Item Name:</label>
+          <input type="text" id="itemNameInput" placeholder="e.g. Greek Yogurt">
+
+          <label>Category:</label>
+          <select id="itemCatSelect">
+            <option value="Dairy">Dairy</option>
+            <option value="Bakery">Bakery</option>
+            <option value="Produce">Produce</option>
+            <option value="Grains">Grains</option>
+          </select>
+
+          <label>Price (₹):</label>
+          <input type="number" id="itemPriceInput" value="50">
+
+          <!-- Property Binding [disabled] & Event Binding (click) -->
+          <button id="addBtn" class="btn btn-add" disabled>(click)="onAddItem()" [disabled]</button>
+          <small class="hint">Button enables dynamically via property binding when Name has text!</small>
+        </div>
+      </aside>
+
+      <!-- RIGHT: STRUCTURAL DIRECTIVES (*ngIf, *ngFor) & PIPES -->
+      <main class="panel main-panel">
+        <div class="main-panel-header">
+          <h3>Catalog Display <code>(*ngFor, Pipes)</code></h3>
+          <span class="pipe-indicator">Active Pipes: <code>| uppercase</code>, <code>| currency:'INR'</code></span>
+        </div>
+
+        <!-- CONTAINER FOR *ngIf & *ngFor -->
+        <div id="catalogGrid" class="cards-grid">
+          <!-- Dynamically generated through simulated Angular Directives -->
+        </div>
+
+        <!-- *ngIf Fallback Template (#noItems) -->
+        <div id="emptyCatalogState" class="empty-state hidden">
+          <p>No items found matching your current search query. (Simulating <code>*ngIf="false"</code>)</p>
+        </div>
+      </main>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

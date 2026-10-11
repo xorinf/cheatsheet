@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Sample Well-Formed XML Document
+  Conforms to strict XML rules:
+  1. Single root element: <groceryCatalog>
+  2. All tags properly closed
+  3. Case sensitive
+  4. Quoted attribute values
+-->
+<groceryCatalog storeName="FreshMart Metro" lastUpdated="2026-10-11">
+
+  <item id="G101" department="Dairy">
+    <name>Organic Cow Milk (1 Litre)</name>
+    <category>Dairy &amp; Eggs</category>
+    <price currency="INR">60.00</price>
+    <stockUnit>Pouch</stockUnit>
+    <availableQuantity>45</availableQuantity>
+    <organicCertified>true</organicCertified>
+  </item>
+
+  <item id="G102" department="Bakery">
+    <name>Artisan Sourdough Loaf (400g)</name>
+    <category>Fresh Bakery</category>
+    <price currency="INR">95.00</price>
+    <stockUnit>Loaf</stockUnit>
+    <availableQuantity>18</availableQuantity>
+    <organicCertified>false</organicCertified>
+  </item>
+
+  <item id="G103" department="Grains">
+    <name>Royal Basmati Rice (5kg)</name>
+    <category>Grains &amp; Staples</category>
+    <price currency="INR">375.00</price>
+    <stockUnit>Bag</stockUnit>
+    <availableQuantity>60</availableQuantity>
+    <organicCertified>true</organicCertified>
+  </item>
+
+  <item id="G104" department="Produce">
+    <name>Crisp Fuji Apples (1kg)</name>
+    <category>Fruits</category>
+    <price currency="INR">160.00</price>
+    <stockUnit>Kg</stockUnit>
+    <availableQuantity>30</availableQuantity>
+    <organicCertified>true</organicCertified>
+  </item>
+
+  <item id="G105" department="Beverages">
+    <name>Cold Pressed Orange Juice (500ml)</name>
+    <category>Beverages</category>
+    <price currency="INR">85.00</price>
+    <stockUnit>Bottle</stockUnit>
+    <availableQuantity>24</availableQuantity>
+    <organicCertified>true</organicCertified>
+  </item>
+
+</groceryCatalog>

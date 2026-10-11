@@ -1,0 +1,247 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  padding: 30px 16px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.page-header h1 {
+  font-size: 26px;
+  color: #0f172a;
+}
+
+.page-header p {
+  color: #64748b;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.card-section {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.card-section h2 {
+  font-size: 20px;
+  color: #1e293b;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+.description {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* 1. TABLE STYLES */
+.table-container {
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.styled-table caption {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f172a;
+  padding: 10px;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #cbd5e1;
+  padding: 12px 14px;
+  text-align: left;
+}
+
+.styled-table thead tr:first-child th {
+  background-color: #1e293b;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.styled-table thead tr:nth-child(2) th {
+  background-color: #334155;
+  color: #f8fafc;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.dept-cell {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #0f172a;
+  vertical-align: middle;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.styled-table tfoot th {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.in-stock {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.low-stock {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.out-stock {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* 2. BOX MODEL LAB STYLES */
+.box-model-lab {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .box-model-lab {
+    flex-direction: row;
+  }
+}
+
+.controls-panel {
+  flex: 1;
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.control-item {
+  margin-bottom: 16px;
+}
+
+.control-item label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+.control-item input[type="range"] {
+  width: 100%;
+}
+
+.control-item select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+/* Box Model Layers Visualizer */
+.visualizer-wrapper {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 320px;
+}
+
+.box-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.15s ease-out;
+  box-sizing: border-box;
+}
+
+.layer-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  pointer-events: none;
+}
+
+.margin-layer {
+  background-color: #fed7aa; /* Orange for Margin */
+  border: 2px dashed #ea580c;
+  padding: 20px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.border-layer {
+  background-color: #475569; /* Dark gray for border */
+  border: 4px solid #0f172a;
+  padding: 4px;
+  width: 100%;
+}
+
+.padding-layer {
+  background-color: #bbf7d0; /* Green for Padding */
+  padding: 20px;
+  width: 100%;
+}
+
+.content-layer {
+  background-color: #93c5fd; /* Blue for Content */
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.demo-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e3a8a;
+}

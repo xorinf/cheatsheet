@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeScript OOP, Interfaces & Generics Interactive Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-container">
+    <header class="page-header">
+      <h1>TypeScript OOP, Interfaces & Generics Playground</h1>
+      <p>Demonstrates TypeScript's core features: static typing, interfaces, duck typing, classes with access modifiers, parameter properties, inheritance, and generic constraints.</p>
+    </header>
+
+    <div class="playground-grid">
+      
+      <!-- LEFT: CONTROLS & CODE VIEWER -->
+      <section class="card">
+        <h2>Interactive Concept Triggers</h2>
+        <p class="card-subtitle">Click any button below to execute that specific TypeScript OOP feature:</p>
+
+        <div class="action-buttons">
+          <button class="btn" onclick="runInterfaceDemo()">1. Run Interface & Readonly Demo</button>
+          <button class="btn" onclick="runDuckTypingDemo()">2. Run Duck Typing (Structural) Demo</button>
+          <button class="btn" onclick="runClassInheritanceDemo()">3. Run Class & Access Modifiers Demo</button>
+          <button class="btn" onclick="runGenericsDemo()">4. Run Generic Repository &lt;T&gt; Demo</button>
+        </div>
+
+        <h3 class="viewer-title">Active TypeScript Snippet:</h3>
+        <pre><code id="tsCodeViewer">// Select an action above to inspect the TypeScript source code...</code></pre>
+      </section>
+
+      <!-- RIGHT: LIVE RUNTIME CONSOLE -->
+      <section class="card">
+        <div class="console-header">
+          <h2>Execution Output Console</h2>
+          <button class="btn-clear" onclick="clearConsole()">Clear Console</button>
+        </div>
+        <div class="console-terminal" id="terminalOutput">
+          <div class="console-line system">[System] TypeScript Interactive Runtime Ready.</div>
+          <div class="console-line system">[System] Click any button on the left to execute TypeScript logic live!</div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

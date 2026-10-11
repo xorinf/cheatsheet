@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Events</title>
+</head>
+
+<body>
+
+<h2>College Portal</h2>
+
+<label>Enter Student Name:</label>
+
+<input
+    type="text"
+    id="studentName"
+>
+
+<button id="welcomeButton">
+    Show Welcome Message
+</button>
+
+<p id="message"></p>
+
+
+<script>
+
+const button =
+    document.getElementById("welcomeButton");
+
+button.addEventListener("click", showWelcome);
+
+
+function showWelcome() {
+
+    const studentName =
+        document.getElementById("studentName").value;
+
+    document.getElementById("message").textContent =
+        "Welcome " + studentName;
+}
+
+</script>
+
+</body>
+
+</html>

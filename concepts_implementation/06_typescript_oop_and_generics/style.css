@@ -1,0 +1,165 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  padding: 30px 16px;
+}
+
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.page-header p {
+  font-size: 14px;
+  color: #64748b;
+  max-width: 700px;
+  margin: 6px auto 0;
+}
+
+.playground-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 850px) {
+  .playground-grid {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: #1e293b;
+}
+
+.card-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #0369a1;
+}
+
+.viewer-title {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+pre {
+  background: #0f172a;
+  color: #38bdf8;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  overflow-x: auto;
+  line-height: 1.5;
+  min-height: 180px;
+}
+
+/* Terminal Console */
+.console-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.btn-clear {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-clear:hover {
+  background: #fecaca;
+}
+
+.console-terminal {
+  background: #090d16;
+  color: #10b981;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 13px;
+  height: 380px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.console-line {
+  margin-bottom: 4px;
+}
+
+.console-line.system {
+  color: #64748b;
+}
+
+.console-line.header {
+  color: #f59e0b;
+  font-weight: bold;
+  border-bottom: 1px dashed #334155;
+  padding-bottom: 2px;
+  margin-top: 8px;
+}
+
+.console-line.success {
+  color: #34d399;
+}

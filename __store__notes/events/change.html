@@ -1,0 +1,23 @@
+<select id="department">
+
+    <option value="">Select Department</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+
+</select>
+
+<p id="result"></p>
+
+<script>
+
+const department =
+    document.getElementById("department");
+
+department.addEventListener("change", function () {
+
+    document.getElementById("result").textContent =
+        "Selected Department: " +
+        department.value;
+});
+
+</script>

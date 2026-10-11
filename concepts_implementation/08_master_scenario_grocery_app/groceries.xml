@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groceryInventory>
+  <product id="101" category="Dairy">
+    <name>Organic Toned Milk (1L)</name>
+    <price>58.00</price>
+    <stock>32</stock>
+    <status>In Stock</status>
+  </product>
+  <product id="102" category="Dairy">
+    <name>Fresh Farm Butter (500g)</name>
+    <price>265.00</price>
+    <stock>14</stock>
+    <status>In Stock</status>
+  </product>
+  <product id="103" category="Grains">
+    <name>Royal Sharbati Wheat Flour (10kg)</name>
+    <price>440.00</price>
+    <stock>25</stock>
+    <status>In Stock</status>
+  </product>
+  <product id="104" category="Grains">
+    <name>Aged Basmati Rice (5kg)</name>
+    <price>360.00</price>
+    <stock>40</stock>
+    <status>In Stock</status>
+  </product>
+  <product id="105" category="Produce">
+    <name>Farm Fresh Tomatoes (1kg)</name>
+    <price>35.00</price>
+    <stock>50</stock>
+    <status>In Stock</status>
+  </product>
+  <product id="106" category="Beverages">
+    <name>Organic Green Tea (25 Bags)</name>
+    <price>160.00</price>
+    <stock>0</stock>
+    <status>Out of Stock</status>
+  </product>
+</groceryInventory>

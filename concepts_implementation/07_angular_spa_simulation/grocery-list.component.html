@@ -1,0 +1,76 @@
+<!-- Angular Template Demonstrating All 4 Data Bindings, Directives and Pipes -->
+
+<div class="angular-container">
+  
+  <!-- 1. Interpolation: {{ appTitle }} -->
+  <header>
+    <h1>{{ appTitle }}</h1>
+    <p>Demonstrating Angular Data Binding, *ngIf, *ngFor, Pipes, and Service Injection</p>
+  </header>
+
+  <!-- 4. Two-Way Data Binding: [(ngModel)] and 3. Event Binding: (click) -->
+  <div class="search-panel">
+    <label>Search Grocery (Two-Way Binding):</label>
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Type grocery name here...">
+    <p>Live Bound Value: <b>{{ searchTerm }}</b></p>
+  </div>
+
+  <!-- Add Item Form -->
+  <div class="add-form">
+    <h3>Add New Grocery Item</h3>
+    <div class="form-inputs">
+      <input type="text" [(ngModel)]="newItemName" placeholder="Item Name">
+      <select [(ngModel)]="newItemCategory">
+        <option value="Dairy">Dairy</option>
+        <option value="Bakery">Bakery</option>
+        <option value="Produce">Produce</option>
+        <option value="Grains">Grains</option>
+      </select>
+      <input type="number" [(ngModel)]="newItemPrice" placeholder="Price">
+      
+      <!-- 2. Property Binding: [disabled] and 3. Event Binding: (click) -->
+      <button [disabled]="newItemName.length === 0" (click)="onAddItem()">Add Item</button>
+    </div>
+  </div>
+
+  <!-- Structural Directive: *ngIf and else ng-template -->
+  <div class="items-list-section">
+    <h3>Catalog Items</h3>
+    
+    <div *ngIf="filteredItems.length > 0; else noItemsBlock">
+      
+      <!-- Structural Directive: *ngFor with index -->
+      <div class="card-grid">
+        <div class="card" *ngFor="let item of filteredItems; let i = index">
+          
+          <div class="card-header">
+            <!-- Pipes: uppercase -->
+            <span class="badge">{{ item.category | uppercase }}</span>
+            <span class="index">#{{ i + 1 }}</span>
+          </div>
+
+          <h4>{{ item.name }}</h4>
+
+          <!-- Pipes: currency and date -->
+          <p class="price">Price: {{ item.price | currency:'INR':'symbol' }}</p>
+          <p class="date">Added: {{ item.addedDate | date:'mediumDate' }}</p>
+
+          <!-- Attribute Directive: [ngClass] -->
+          <div [ngClass]="{ 'status-in': item.inStock, 'status-out': !item.inStock }">
+            {{ item.inStock ? 'Available In Stock' : 'Out of Stock' }}
+          </div>
+
+          <button (click)="onToggleStock(item.id)">Toggle Stock</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Fallback template for *ngIf -->
+    <ng-template #noItemsBlock>
+      <p class="empty-msg">No grocery items found matching "{{ searchTerm }}".</p>
+    </ng-template>
+
+  </div>
+
+</div>

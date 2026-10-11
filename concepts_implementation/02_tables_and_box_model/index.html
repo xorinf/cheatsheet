@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables & CSS Box Model Demonstration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="page-header">
+      <h1>HTML Tables & CSS Box Model Interactive Guide</h1>
+      <p>Demonstrating complex table spanning (colspan & rowspan) and an interactive CSS Box Model lab for visual clarity.</p>
+    </header>
+
+    <!-- SECTION 1: COMPLEX HTML TABLE -->
+    <section class="card-section">
+      <h2>1. HTML Table with Colspan & Rowspan</h2>
+      <p class="description">
+        <b>Rowspan</b> merges cells vertically (across rows). <b>Colspan</b> merges cells horizontally (across columns).
+      </p>
+
+      <div class="table-container">
+        <table class="styled-table">
+          <caption>Weekly Grocery Store Inventory & Shift Schedule</caption>
+          <thead>
+            <tr>
+              <th rowspan="2">Department</th>
+              <th rowspan="2">Item Code</th>
+              <th rowspan="2">Item Name</th>
+              <th colspan="2">Pricing (INR)</th>
+              <th rowspan="2">Current Stock</th>
+            </tr>
+            <tr>
+              <th>Retail Price</th>
+              <th>Member Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- Rowspan merges 3 rows for Dairy -->
+              <td rowspan="3" class="dept-cell">Dairy & Cold</td>
+              <td>D-101</td>
+              <td>Pasteurized Whole Milk (1L)</td>
+              <td>₹65.00</td>
+              <td>₹60.00</td>
+              <td><span class="badge in-stock">45 Units</span></td>
+            </tr>
+            <tr>
+              <td>D-102</td>
+              <td>Greek Yogurt (400g)</td>
+              <td>₹90.00</td>
+              <td>₹82.00</td>
+              <td><span class="badge low-stock">8 Units</span></td>
+            </tr>
+            <tr>
+              <td>D-103</td>
+              <td>Salted Butter (500g)</td>
+              <td>₹275.00</td>
+              <td>₹255.00</td>
+              <td><span class="badge in-stock">20 Units</span></td>
+            </tr>
+            <tr>
+              <!-- Rowspan merges 2 rows for Grains -->
+              <td rowspan="2" class="dept-cell">Farm Grains</td>
+              <td>G-201</td>
+              <td>Organic Basmati Rice (5kg)</td>
+              <td>₹380.00</td>
+              <td>₹350.00</td>
+              <td><span class="badge in-stock">60 Units</span></td>
+            </tr>
+            <tr>
+              <td>G-202</td>
+              <td>Whole Wheat Atta (10kg)</td>
+              <td>₹450.00</td>
+              <td>₹420.00</td>
+              <td><span class="badge out-stock">0 Units (Out)</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <!-- Colspan across first 3 columns -->
+              <th colspan="3" style="text-align: right;">Total Departments / Value Summary:</th>
+              <th colspan="2">Active Items: 5</th>
+              <th>133 Units</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 2: INTERACTIVE CSS BOX MODEL VISUALIZER -->
+    <section class="card-section">
+      <h2>2. Interactive CSS Box Model Laboratory</h2>
+      <p class="description">
+        Every HTML element is a box containing: <b>Content</b> &rarr; <b>Padding</b> &rarr; <b>Border</b> &rarr; <b>Margin</b>.
+        Adjust the sliders below to see each layer change in real-time!
+      </p>
+
+      <div class="box-model-lab">
+        
+        <!-- Controls -->
+        <div class="controls-panel">
+          <div class="control-item">
+            <label for="marginSlider">Margin: <span id="marginVal">20px</span> (Outer Space)</label>
+            <input type="range" id="marginSlider" min="0" max="40" value="20">
+          </div>
+
+          <div class="control-item">
+            <label for="borderSlider">Border: <span id="borderVal">4px</span> (Outline Width)</label>
+            <input type="range" id="borderSlider" min="0" max="15" value="4">
+          </div>
+
+          <div class="control-item">
+            <label for="paddingSlider">Padding: <span id="paddingVal">20px</span> (Inner Spacing)</label>
+            <input type="range" id="paddingSlider" min="0" max="40" value="20">
+          </div>
+
+          <div class="control-item">
+            <label>Box Sizing Mode:</label>
+            <select id="boxSizingSelect">
+              <option value="border-box">border-box (Standard & Recommended)</option>
+              <option value="content-box">content-box (Traditional)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Visual Box Model Diagram -->
+        <div class="visualizer-wrapper">
+          <div class="box-layer margin-layer" id="marginLayer">
+            <span class="layer-label">MARGIN (Orange)</span>
+            <div class="box-layer border-layer" id="borderLayer">
+              <span class="layer-label">BORDER (Dark Gray)</span>
+              <div class="box-layer padding-layer" id="paddingLayer">
+                <span class="layer-label">PADDING (Green)</span>
+                <div class="box-layer content-layer" id="contentLayer">
+                  <span class="layer-label">CONTENT (Blue)</span>
+                  <div class="demo-text">Grocery Item Card</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

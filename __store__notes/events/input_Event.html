@@ -1,0 +1,18 @@
+<label>Enter Your Name:</label>
+
+<input type="text" id="studentName">
+
+<p id="output"></p>
+
+<script>
+
+const nameBox =
+    document.getElementById("studentName");
+
+nameBox.addEventListener("input", function () {
+
+    document.getElementById("output").textContent =
+        "Welcome " + nameBox.value;
+});
+
+</script>

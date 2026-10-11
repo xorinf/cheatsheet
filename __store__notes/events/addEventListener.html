@@ -1,0 +1,20 @@
+<button id="loginButton">
+    Login
+</button>
+
+<p id="message"></p>
+
+
+<script>
+const button =
+    document.getElementById("loginButton");
+
+button.addEventListener("click", showMessage);
+
+function showMessage() {
+
+    document.getElementById("message").textContent =
+        "Login button clicked.";
+}
+
+</script>

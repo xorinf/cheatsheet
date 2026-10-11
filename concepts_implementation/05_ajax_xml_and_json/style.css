@@ -1,0 +1,250 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  padding: 30px 16px;
+}
+
+.page-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.page-header p {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+/* Button Bar */
+.button-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-xml {
+  background-color: #ea580c;
+  color: #ffffff;
+}
+.btn-xml:hover {
+  background-color: #c2410c;
+}
+
+.btn-json {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+.btn-json:hover {
+  background-color: #0369a1;
+}
+
+.btn-reset {
+  background-color: #e2e8f0;
+  color: #475569;
+}
+.btn-reset:hover {
+  background-color: #cbd5e1;
+}
+
+/* Status Monitor */
+.status-monitor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 2px;
+}
+
+.status-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.status-idle {
+  color: #64748b;
+}
+.status-active {
+  color: #2563eb;
+}
+.status-success {
+  color: #16a34a;
+}
+.status-error {
+  color: #dc2626;
+}
+
+/* Display Main Card */
+.content-display {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.section-header h2 {
+  font-size: 18px;
+  color: #1e293b;
+}
+
+.badge {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.placeholder-msg {
+  text-align: center;
+  padding: 40px 20px;
+  color: #94a3b8;
+  font-size: 14px;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  border: 1px dashed #cbd5e1;
+}
+
+/* Table Output */
+.ajax-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.ajax-table th,
+.ajax-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ajax-table th {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-weight: 600;
+}
+
+.ajax-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Card Output */
+.json-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.json-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fdfdfd;
+}
+
+.json-card h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.json-card p {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.price-tag {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Raw Details Code Viewer */
+.raw-details {
+  margin-top: 16px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 12px;
+}
+
+.raw-details summary {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  outline: none;
+}
+
+pre {
+  margin-top: 10px;
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.5;
+}

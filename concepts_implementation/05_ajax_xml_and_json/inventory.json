@@ -1,0 +1,34 @@
+[
+  {
+    "id": "J101",
+    "name": "Organic Honey (500g)",
+    "category": "Organic Essentials",
+    "price": 280.00,
+    "stock": 35,
+    "status": "In Stock"
+  },
+  {
+    "id": "J102",
+    "name": "Cold-Pressed Mustard Oil (1L)",
+    "category": "Cooking Oils",
+    "price": 195.00,
+    "stock": 40,
+    "status": "In Stock"
+  },
+  {
+    "id": "J103",
+    "name": "Roasted California Almonds (250g)",
+    "category": "Dry Fruits & Nuts",
+    "price": 320.00,
+    "stock": 15,
+    "status": "Low Stock"
+  },
+  {
+    "id": "J104",
+    "name": "Green Tea Mint Infusion (50 Bags)",
+    "category": "Beverages",
+    "price": 220.00,
+    "stock": 0,
+    "status": "Out of Stock"
+  }
+]

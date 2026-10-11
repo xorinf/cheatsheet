@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Availability & Inventory Management Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="brand">
+        <span class="brand-tag">EWP Lab Exam Project</span>
+        <h1>Grocery Availability Application</h1>
+      </div>
+      <div class="header-stats">
+        <div class="stat-pill">Total Items: <b id="statTotalItems">0</b></div>
+        <div class="stat-pill in-stock-pill">In Stock: <b id="statInStock">0</b></div>
+        <div class="stat-pill out-stock-pill">Out of Stock: <b id="statOutOfStock">0</b></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    
+    <!-- LEFT COLUMN: ADD / RESTOCK ITEM FORM WITH VALIDATION -->
+    <aside class="sidebar-form">
+      <div class="card">
+        <h2>Add / Restock Grocery Item</h2>
+        <p class="card-desc">Enter grocery details. Form performs client-side regex & range validation before saving to LocalStorage.</p>
+
+        <form id="groceryForm" novalidate>
+          
+          <div class="form-group">
+            <label for="prodName">Item Name *</label>
+            <input type="text" id="prodName" placeholder="e.g. Pure Ghee (500ml)">
+            <small class="error-text" id="prodNameErr"></small>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prodCat">Category *</label>
+              <select id="prodCat">
+                <option value="Dairy">Dairy</option>
+                <option value="Grains">Grains</option>
+                <option value="Produce">Produce</option>
+                <option value="Beverages">Beverages</option>
+                <option value="Snacks">Snacks</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="prodPrice">Price (₹) *</label>
+              <input type="number" id="prodPrice" placeholder="50.00" min="1" step="0.5">
+              <small class="error-text" id="prodPriceErr"></small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="prodStock">Stock Quantity *</label>
+            <input type="number" id="prodStock" placeholder="e.g. 25" min="0">
+            <small class="error-text" id="prodStockErr"></small>
+          </div>
+
+          <button type="submit" class="btn btn-save" id="saveItemBtn">Save to Grocery Inventory</button>
+        </form>
+
+        <hr class="divider">
+
+        <!-- XML AJAX INGESTION TRIGGER -->
+        <div class="ajax-import-box">
+          <h3>Load XML Catalog (AJAX)</h3>
+          <p>Fetch remote <code>groceries.xml</code> via <code>XMLHttpRequest</code> and merge with current items.</p>
+          <button type="button" class="btn btn-secondary" onclick="loadFromXML()">Import XML Catalog</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT COLUMN: SEARCH, FILTER & INVENTORY DISPLAY -->
+    <main class="main-content">
+      
+      <!-- TOOLBAR: SEARCH & CATEGORY FILTER -->
+      <div class="toolbar-card">
+        <div class="search-field">
+          <input type="text" id="searchFilter" placeholder="Search grocery by name...">
+        </div>
+        
+        <div class="filter-controls">
+          <select id="categoryFilter">
+            <option value="ALL">All Categories</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Grains">Grains</option>
+            <option value="Produce">Produce</option>
+            <option value="Beverages">Beverages</option>
+            <option value="Snacks">Snacks</option>
+          </select>
+
+          <select id="availabilityFilter">
+            <option value="ALL">All Statuses</option>
+            <option value="IN_STOCK">In Stock Only</option>
+            <option value="OUT_OF_STOCK">Out of Stock Only</option>
+          </select>
+
+          <button class="btn btn-outline" onclick="resetInventoryData()">Reset Defaults</button>
+        </div>
+      </div>
+
+      <!-- INVENTORY CARDS GRID -->
+      <div id="groceryGrid" class="cards-grid">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- EMPTY STATE -->
+      <div id="noItemsBox" class="empty-box hidden">
+        <p>No matching grocery items found. Try adjusting your search query or filters.</p>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

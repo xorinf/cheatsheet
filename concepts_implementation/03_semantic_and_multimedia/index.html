@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Semantic Layout & Multimedia Demonstration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Semantic HEADER -->
+  <header class="site-header">
+    <div class="logo">DailyFresh Market</div>
+    <!-- 2. Semantic NAV -->
+    <nav class="site-nav">
+      <a href="#groceries">Groceries</a>
+      <a href="#media">Media Guide</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- 3. Semantic MAIN Container -->
+  <main class="site-main">
+    
+    <!-- 4. Semantic SECTION: Grocery Articles -->
+    <section id="groceries" class="content-section">
+      <h2>Fresh Market Articles</h2>
+      <p class="section-subtitle">Articles demonstrate independent, self-contained semantic content blocks.</p>
+
+      <div class="articles-grid">
+        <!-- 5. Semantic ARTICLE 1 -->
+        <article class="item-card">
+          <header class="card-header">
+            <h3>Farm Fresh Spinach</h3>
+            <span class="tag">Produce</span>
+          </header>
+          <p>Harvested daily from local organic farms. Packed with iron, calcium, and essential dietary fiber.</p>
+          <footer class="card-footer">
+            <span class="price">₹25.00 / bunch</span>
+            <button class="buy-btn">Order</button>
+          </footer>
+        </article>
+
+        <!-- 5. Semantic ARTICLE 2 -->
+        <article class="item-card">
+          <header class="card-header">
+            <h3>Alphonso Mangoes</h3>
+            <span class="tag">Seasonal</span>
+          </header>
+          <p>Naturally ripened sweet mangoes direct from certified orchards. No chemical ripening agents.</p>
+          <footer class="card-footer">
+            <span class="price">₹450.00 / dozen</span>
+            <button class="buy-btn">Order</button>
+          </footer>
+        </article>
+      </div>
+
+      <!-- Demonstration of DIV vs SPAN -->
+      <div class="concept-callout">
+        <h4>Understanding &lt;div&gt; vs &lt;span&gt;</h4>
+        <p>
+          A <code>&lt;div&gt;</code> is a <b>block-level</b> element (takes the entire row width, like this callout box).
+          In contrast, a <code>&lt;span&gt;</code> is an <span class="highlight-inline">inline container</span> that occupies only the width of its text without breaking into a new line.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. Semantic ASIDE (Sidebar Information) -->
+    <aside class="site-aside">
+      <h3>Weekly Store Notice</h3>
+      <div class="notice-box">
+        <p><b>Free Delivery:</b> On orders above ₹499 throughout this week.</p>
+      </div>
+      <div class="notice-box">
+        <p><b>Operating Hours:</b> Open daily 6:00 AM – 10:00 PM.</p>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- 7. Multimedia SECTION: Audio & Video -->
+  <section id="media" class="multimedia-section">
+    <h2>HTML5 Native Multimedia Embedding</h2>
+    <p class="section-subtitle">Using native &lt;video&gt; and &lt;audio&gt; tags with fallback content and controls.</p>
+
+    <div class="media-container">
+      
+      <!-- Video Element -->
+      <div class="media-card">
+        <h3>Store Tour Video</h3>
+        <video controls poster="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&q=80" width="100%">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="media-caption">Demonstrates: <code>controls</code>, <code>poster</code>, and nested <code>&lt;source&gt;</code> tags.</p>
+      </div>
+
+      <!-- Audio Element -->
+      <div class="media-card">
+        <h3>Daily Store Announcement</h3>
+        <div class="audio-wrapper">
+          <audio controls>
+            <source src="https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <p class="media-caption">Demonstrates: <code>&lt;audio controls&gt;</code> with standard playback UI.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. Semantic FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 DailyFresh Market Portal. Built with pure semantic HTML5 & modern CSS.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,3643 @@
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ESSENTIALS OF WEB PROGRAMMING  
+UNIT-I 
+ 
+1. INTRODUCTION TO WEB AND INTERNET  
+ 
+1.1 INTRODUCTION  
+The last three decades have witnessed tremendous growth in information and communication 
+technologies. Computers are no longer isolated machines used only for local computations. 
+Today, computers communicate with each other, exchange information, share res ources, and 
+provide services across the world. This global communication is made possible through the 
+Internet. 
+ 
+The Internet has transformed almost every aspect of human life, including education, 
+healthcare, banking, entertainment, business, and scientific research. Applications such as 
+Google, YouTube, Amazon, WhatsApp, and ChatGPT operate through the Internet.  
+The World Wide Web (WWW) is one of the most important services provided by the 
+Internet. The Web enables users to access information in the form of web pages and 
+websites using web browsers.  
+ 
+Therefore, before learning HTML and web programming, it is essential to understand the 
+concepts of the Internet and the World Wide Web.  
+ 
+1.2 LEARNING OBJECTIVES  
+1. Understand the concept of the Internet.  
+2. Define the World Wide Web.  
+3. Explain the history of the Internet.  
+4. Differentiate between Internet and WWW. 
+5. Describe web pages and websites.  
+6. Explain the role of browsers and web servers.  
+7. Understand the working of the Web.  
+ 
+1.3 NEED FOR THE INTERNET  
+Before the Internet, information sharing was difficult because:  
+• Communication was slow.  
+• Documents had to be physically transported.  
+• Access to information was limited.  
+• Collaboration among researchers was difficult.  
+• Geographical barriers restricted communication.  
+ 
+The Internet solved these problems by providing:  
+• Fast communication.  
+• Global connectivity.  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+• Information sharing.  
+• Resource sharing.  
+• Online services.  
+ 
+Example 
+• A student in India can attend an online lecture conducted in the United States.  
+• A doctor in one city can examine medical reports sent from another city.  
+• A customer can purchase products from another country.  
+• All these activities are possible because of the Internet.  
+ 
+1.4 HISTORY OF THE INTERNET  
+The origin of the Internet can be traced back to the late 1960s.The United States 
+Department of Defense developed a communication network known as ARPANET (Advanced 
+Research Projects Agency Network).  The objective of ARPANET was to establish a 
+communication system that could continue functioning even if some communication links 
+failed. Later, universities and research organizations joined these networks.  This development 
+led to the creation of the modern Internet.  
+ 
+ 
+EVOLUTION OF INTERNET  
+ 
+ARPANET (1969)  
+↓ 
+NSFNET (1980s)  
+↓ 
+Academic Networks  
+↓ 
+Commercial Networks  
+↓ 
+INTERNET 
+ 
+1.5 INTERNET  
+Definition: The Internet is a global system of interconnected computer networks that 
+communicate using standard communication protocols.  
+ 
+Alternative Definition : The Internet is a network of networks that connects millions of 
+computers and electronic devices throughout the world.  
+ 
+CHARACTERISTICS OF INTERNET  
+The important characteristics of the Internet are:  
+1. Global connectivity.  
+2. Resource sharing.  
+3. High-speed communication.  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+4. Scalability. 
+5. Reliability. 
+6. Decentralization.  
+ 
+COMPONENTS OF INTERNET  
+The Internet consists of:  
+1. Client Computers : Devices used by users.  
+    Examples: Mobile phones , Laptops, Desktops 
+ 
+2. Servers: Computers that provide services and information.  
+    Examples: Google servers , Amazon servers  
+ 
+3. Communication Media : Optical fiber cables , Wireless communication , Satellite links  
+ 
+4. Routers:  Devices that transfer data between networks.  
+ 
+5. Protocols :  Rules governing communication.  
+    Examples: TCP/IP, HTTP 
+ 
+1.6 WORLD WIDE WEB (WWW)  
+Definition: The World Wide Web is a collection of interconnected web pages and documents 
+that are accessed through the Internet using web browsers.  
+ 
+Alternative Definition : WWW is an information system consisting of websites and web 
+pages linked together by hyperlinks.  
+ 
+The Web was proposed by Sir Tim Berners -Lee in 1989 while working at CERN.  
+His objective was to enable researchers to share information efficiently.  
+ 
+TECHNOLOGIES INTRODUCED  
+The Web introduced three major technologies:  
+• HTML 
+• HTTP 
+• URL 
+These technologies became the foundation of modern web systems.  
+ 
+Figure 1.1 STRUCTURE OF WWW  
+ 
+WWW 
+↓ 
+Websites 
+↓ 
+Web Pages 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+↓ 
+Hyperlinks 
+ 
+1.7 INTERNET Vs WORLD WIDE WEB  
+Although these terms are often used interchangeably, they are different.  
+ 
+Internet World Wide Web  
+Global network  Information system  
+Provides connectivity  Provides information  
+Uses TCP/IP  Uses HTTP 
+Infrastructure  Service 
+Hardware and software  Web pages and websites  
+ 
+ 
+Observation:  
+• The Internet can exist without the Web.  
+• However, the Web cannot exist without the Internet.  
+ 
+1.8 WEB PAGE  
+Definition:  A web page is a document created using HTML and displayed by a web 
+browser. 
+ 
+Examples: Google home page , Amazon product page , University result page.  
+ 
+Example:  HTML Page 
+ 
+<!DOCTYPE html>  
+<html> 
+ 
+<head> 
+    <title>My First Page</title>  
+</head> 
+ 
+<body> 
+    <h1>Welcome Students</h1>  
+ 
+    <p>This is my first webpage.</p>  
+</body> 
+ 
+</html> 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Explanation: The browser interprets HTML instructions and displays the contents to the 
+user. 
+ 
+1.9 WEBSITE  
+Definition: A website is a collection of related web pages connected through hyperlinks.  
+ 
+Examples: Amazon, Facebook, University website . 
+ 
+A university website may contain:  
+• Home page 
+• Admissions page  
+• Results page  
+• Contact page  
+Together, these pages form a website.  
+ 
+1.10 WEB BROWSER  
+Definition: A web browser is a software application used to access and display web pages.  
+ 
+Examples: Google Chrome , Mozilla Firefox , Microsoft Edge , Safari. 
+ 
+FUNCTIONS OF BROWSER  
+• Sends requests.  
+• Receives responses.  
+• Displays webpages.  
+• Executes HTML instructions.  
+ 
+1.11 WEB SERVER  
+Definition: A web server is a computer that stores web pages and delivers them to users 
+upon request.  
+ 
+Examples: Apache, Nginx, IIS 
+ 
+1.12 URL (UNIFORM RESOURCE LOCATOR)  
+Definition: A URL is the address of a web page on the Internet.  
+ 
+Example: https://www.google.com  
+ 
+Components of URL: https://www.google.com  
+ 
+https → Protocol 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+www → Subdomain 
+ 
+google → Domain Name  
+ 
+.com → Domain Extension  
+ 
+1.13 WORKING OF THE WEB  
+When a user enters a URL, the following sequence occurs:  
+• The user enters the URL.  
+• The browser sends a request.  
+• The Internet transfers the request.  
+• The web server processes the request.  
+• The server sends a response.  
+• The browser displays the webpage.  
+ 
+ 
+Figure 1.2 WORKING OF THE WEB  
+ 
+User 
+↓ 
+Browser 
+↓ 
+Internet 
+↓ 
+Web Server 
+↓ 
+Response 
+↓ 
+Browser 
+ 
+1.14 APPLICATIONS OF INTERNET AND WEB  
+The Internet and Web have applications in:  
+ 
+Education 
+• Online classes  
+• Learning portals  
+ 
+Banking 
+• Internet banking  
+• UPI services  
+ 
+Healthcare 
+• Online consultation  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+• Appointment systems  
+ 
+E-Commerce 
+• Amazon 
+• Flipkart 
+ 
+Entertainment  
+• YouTube 
+• Netflix 
+ 
+Artificial Intelligence  
+• ChatGPT 
+• Gemini 
+ 
+1.15 ADVANTAGES  
+• Fast communication.  
+• Global connectivity.  
+• Information sharing.  
+• Resource sharing.  
+• Online services.  
+• Remote education.  
+ 
+1.16 LIMITATIONS  
+• Security threats.  
+• Privacy issues.  
+• Cybercrime. 
+• Fake information.  
+• Internet addiction.  
+ 
+IMPORTANT POINTS  
+✓ Internet and WWW are different.  
+✓ WWW was proposed by Tim Berners -Lee. 
+✓ HTML, HTTP, and URL are the foundations of the Web.  
+✓ Browsers display web pages.  
+✓ Servers store web pages.  
+ 
+Question 
+ 
+1. Can the Internet exist without Google?  
+Answer: Yes.  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+2. Can Google exist without the Internet?  
+Answer: No.  
+ 
+SCENARIO-BASED EXAMPLES  
+1. A hospital sends patient reports to another branch , which technology enables  
+    communication?  
+    Answer: Internet.  
+ 
+2. A student accesses multiple university pages , which system provides these pages?  
+   Answer: WWW. 
+ 
+3. An organization stores webpages on a powerful computer , what is that computer  
+    called? 
+    Answer: Web Server.  
+ 
+4. A user enters:  www.amazon.com ,what identifies this address?  
+    Answer: URL.  
+ 
+SUMMARY 
+• The Internet is a global communication network.  
+• The World Wide Web is an information system built on the Internet.  
+• Browsers access web pages stored on web servers.  
+• URLs identify web resources.  
+• The Web has revolutionized communication, education, business, and entertainment.  
+ 
+The Internet connects computers, whereas the World Wide Web connects information and 
+people through interconnected web pages.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+2. EVOLUTION OF HTML  
+ 
+2.1 INTRODUCTION  
+The World Wide Web has undergone tremendous changes since its inception. In the early 
+days, web pages contained only simple text and hyperlinks. Modern web applications, 
+however, support multimedia, graphics, animations, mobile devices, and interactive con tent. The 
+language responsible for this evolution is HTML (HyperText Markup Language) . 
+ 
+HTML has evolved through several versions to meet the increasing demands of web 
+applications. Each version introduced new features and improved the limitations of previous 
+versions. Understanding the evolution of HTML helps students appreciate the development of 
+modern web technologies and understand the significance of HTML5.  
+ 
+2.2 LEARNING OBJECTIVES  
+After studying this topic, the learner will be able to:  
+• Explain the need for HTML.  
+• Discuss the evolution of HTML.  
+• Describe different HTML versions.  
+• Compare older HTML versions with HTML5.  
+• Understand the importance of HTML5.  
+• Explain the major improvements introduced in HTML.  
+ 
+2.3 NEED FOR HTML   
+Before HTML, sharing information between computers was difficult because:  
+• Different computers used different document formats.  
+• Documents were not interconnected.  
+• Information retrieval was difficult.  
+• Scientific researchers could not efficiently share data.  
+ 
+Tim Berners-Lee proposed HTML to solve these problems.  
+The objective was:  To create a common language for sharing information through interconnected 
+documents. 
+ 
+Example: Researchers in different countries wanted to access the same scientific documents.  
+HTML made this possible by creating linked electronic documents.  
+ 
+2.4 WHAT IS EVOLUTION OF HTML?  
+Definition: The evolution of HTML refers to the gradual development of HTML from a 
+simple document formatting language to a powerful web development language.  
+ 
+Over the years, HTML introduced:  
+• Images 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+• Tables 
+• Forms 
+• CSS support  
+• Multimedia  
+• Semantic elements  
+• Mobile compatibility  
+ 
+2.5 HISTORY OF HTML  
+In 1989, Tim Berners -Lee, working at CERN, proposed a system for sharing scientific 
+documents. In 1991, the first version of HTML was introduced.  Since then, HTML has 
+evolved continuously.  
+ 
+Figure 2.1 Evolution of HTML  
+ 
+HTML 1.0 (1991)  
+↓ 
+HTML 2.0 (1995)  
+↓ 
+HTML 3.2 (1997)  
+↓ 
+HTML 4.01 (1999)  
+↓ 
+XHTML (2000)  
+↓ 
+HTML5 (2014)  
+ 
+2.6 HTML 1.0 (1991)  
+HTML 1.0 was the first version of HTML.  
+Features: 
+• Headings 
+• Paragraphs  
+• Hyperlinks 
+• Basic formatting  
+ 
+Limitations 
+• No images.  
+• No tables.  
+• No forms.  
+• No multimedia.  
+ 
+Example 
+Program 2.1 Basic HTML 1.0 Page  
+<html> 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+<body> 
+ 
+<h1>Welcome</h1>  
+ 
+<p>Hello Students</p>  
+ 
+</body> 
+ 
+</html> 
+ 
+Observation: HTML 1.0 was suitable only for static text documents.  
+ 
+2.7 HTML 2.0 (1995)  
+HTML 2.0 standardized HTML specifications.  
+Major Feature:  
+• Forms 
+This allowed websites to collect user information.  
+ 
+Example Applications  
+• Registration forms  
+• Login pages  
+• Feedback forms  
+ 
+Example 
+<form> 
+ 
+<input type="text">  
+ 
+<input type="submit">  
+ 
+</form> 
+ 
+2.8 HTML 3.2 (1997)  
+HTML 3.2 introduced:  
+• Tables 
+• Images 
+• Fonts 
+• Applets 
+ 
+Example Applications  
+• News websites  
+• Product catalogs  
+• Educational websites  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+Example 
+<table border="1">  
+ 
+<tr> 
+<td>Student</td>  
+</tr> 
+ 
+</table> 
+ 
+2.9 HTML 4.01 (1999)  
+HTML 4.01 focused on separating content and presentation.  
+Major improvements:  
+• CSS support  
+• Scripting support  
+• Improved forms  
+• Better accessibility  
+ 
+Observation 
+HTML became more structured and maintainable.  
+ 
+2.10 XHTML (2000)  
+XHTML stands for:  Extensible HyperText Markup Language , XHTML introduced stricter 
+coding rules.  
+ 
+Rules: 
+• All tags must be closed.  
+• Tags must be lowercase.  
+• Proper nesting is mandatory.  
+ 
+Incorrect XHTML  
+<p>Hello 
+ 
+Correct XHTML  
+<p>Hello</p>  
+ 
+Limitation 
+Developers found XHTML too restrictive.  
+ 
+2.11 HTML5 (2014)  
+HTML5 is the latest major version of HTML.  
+ 
+HTML5 introduced:  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+• Audio support  
+• Video support  
+• Semantic elements  
+• Canvas 
+• Local storage  
+• Mobile compatibility  
+ 
+Figure 2.2 Features of HTML5  
+HTML5 
+ 
+↓ 
+ 
+Audio 
+ 
+Video 
+ 
+Canvas 
+ 
+Semantic Tags  
+ 
+Mobile Support  
+ 
+Example 
+Program 2.2 Video in HTML5  
+ 
+<video controls>  
+ 
+<source src="lecture.mp4">  
+ 
+</video> 
+ 
+Example 
+Program 2.3 Audio in HTML5  
+ 
+<audio controls>  
+ 
+<source src="song.mp3">  
+ 
+</audio> 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+2.12 COMPARISON OF HTML VERSIONS  
+Version Major Feature  
+HTML 1.0 Basic pages 
+HTML 2.0 Forms 
+HTML 3.2 Tables and images  
+HTML 4.01 CSS support  
+XHTML Strict rules 
+HTML5 Multimedia 
+ 
+2.13 ADVANTAGES OF HTML5  
+• Supports multimedia.  
+• Mobile friendly.  
+• Better semantics.  
+• Improved accessibility.  
+• Reduced dependency on plugins.  
+• Faster performance.  
+ 
+2.14 APPLICATIONS OF HTML5  
+HTML5 is used in:  
+• YouTube 
+• Netflix 
+• Online education  
+• Web applications  
+• Mobile applications  
+• Interactive websites  
+ 
+Example 
+YouTube previously required Flash.  
+Today: 
+<video> 
+plays videos directly.  
+ 
+SCENARIO-BASED EXAMPLES  
+1: A company wants to create online registration forms, Which HTML version introduced 
+forms? 
+Answer: HTML 2.0  
+ 
+2: A shopping website wants product tables , which version introduced tables?  
+Answer: HTML 3.2  
+ 
+3: A website wants to play videos without Flash , which version should be used?  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Answer: HTML5  
+ 
+4: A developer wants all tags to be properly closed.  
+Which standard enforces this?  
+Answer: XHTML  
+ 
+5: A mobile-friendly website requires multimedia support , Which version is suitable?  
+Answer: HTML5  
+ 
+IMPORTANT POINTS  
+✓ HTML was developed by Tim Berners -Lee. 
+✓ HTML 1.0 introduced basic web pages.  
+✓ HTML 2.0 introduced forms.  
+✓ HTML 3.2 introduced tables.  
+✓ HTML 4.01 supported CSS.  
+✓ XHTML introduced strict rules.  
+✓ HTML5 introduced multimedia.  
+ 
+Wrong: HTML5 is a programming language.  
+Correct: HTML5 is a markup language.  
+ 
+Wrong: XHTML replaced HTML.  
+Correct: HTML5 became more popular than XHTML.  
+ 
+SUMMARY 
+• HTML was introduced in 1991.  
+• Several versions improved HTML capabilities.  
+• HTML evolved from simple text pages to multimedia web applications.  
+• HTML5 is the latest major version.  
+• Modern websites heavily depend on HTML5.  
+ 
+ 
+The evolution of HTML reflects the evolution of the Web itself —from static documents to 
+modern interactive web applications.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+3. WORLD WIDE WEB (WWW)  
+ 
+3.1 INTRODUCTION  
+The World Wide Web (WWW) is one of the most important services available on the 
+Internet. Today, millions of people use the Web to access information, communicate, perform 
+online transactions, study, watch videos, and use various online services.  Although the terms 
+Internet and World Wide Web  are often used interchangeably, they are different. The 
+Internet provides the communication infrastructure, whereas the World Wide Web provides 
+access to information through web pages and websites.  
+ 
+The Web has transformed the world into a global information system where users can 
+access information from anywhere at any time.  
+ 
+3.2 LEARNING OBJECTIVES  
+• Define World Wide Web.  
+• Explain the need for WWW. 
+• Discuss the history of WWW. 
+• Describe the components of WWW. 
+• Explain the working of WWW. 
+• Differentiate WWW from the Internet.  
+• Understand the applications of WWW. 
+ 
+3.3 NEED FOR WORLD WIDE WEB  
+Before the Web was introduced:  
+• Documents were stored separately.  
+• Information sharing was difficult.  
+• Researchers could not easily access documents.  
+• There was no common information system.  
+• Finding information was time -consuming. 
+ 
+The World Wide Web solved these problems by providing:  
+• Interconnected documents.  
+• Hyperlinks.  
+• Global accessibility.  
+• Easy navigation.  
+• Information sharing.  
+ 
+Example 
+• A researcher in India can access a scientific paper stored in Europe.  
+• A student can access lecture notes stored on a university server.  
+• These facilities became possible because of the World Wide Web.  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+3.4 DEFINITION OF WORLD WIDE WEB  
+Definition: The World Wide Web (WWW) is a system of interconnected web pages and 
+documents that are accessed through the Internet using web browsers.  
+ 
+Definition: WWW is a collection of websites and web pages connected through hyperlinks.  
+Definition: The World Wide Web is an information retrieval system in which documents 
+and resources are identified by URLs and accessed through the Internet.  
+ 
+3.5 HISTORY OF WWW  
+The World Wide Web was invented by:  Tim Berners-Lee 
+Year: 1989 
+Place: CERN, Switzerland  
+The primary objective was:  To share scientific information among researchers.  
+ 
+Tim Berners-Lee introduced:  
+• HTML 
+• HTTP 
+• URL 
+These technologies became the foundation of the World Wide Web.  
+ 
+Figure 3.1 Development of WWW  
+Tim Berners-Lee (1989) 
+↓ 
+HTML 
+↓ 
+HTTP 
+↓ 
+URL 
+↓ 
+WWW 
+ 
+3.6 COMPONENTS OF WWW  
+The World Wide Web consists of the following components:  
+1. Web Pages 
+2. Websites 
+3. Web Browsers  
+4. Web Servers  
+5. URLs 
+6. Hyperlinks 
+7. HTTP Protocol  
+ 
+1. Web Pages  
+A web page is an HTML document displayed by a browser.  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+Examples: 
+• Home page  
+• Contact page  
+• Results page  
+ 
+2. Websites 
+A website is a collection of related web pages.  
+ 
+Examples: 
+• Google 
+• Amazon 
+• University websites  
+ 
+3. Web Browser  
+A browser is software used to access web pages.  
+ 
+Examples: 
+• Google Chrome  
+• Mozilla Firefox  
+• Microsoft Edge  
+ 
+4. Web Server  
+A web server stores websites and delivers them to users.  
+ 
+Examples: 
+• Apache 
+• Nginx 
+• IIS 
+ 
+5. URL 
+URL identifies the location of a web page.  
+ 
+Example: https://www.google.com  
+ 
+6. Hyperlink 
+Hyperlinks connect one web page to another.  
+ 
+Example: "Click Here" 
+ 
+7. HTTP 
+HTTP stands for:  
+HyperText Transfer Protocol.  
+It transfers web pages between browsers and servers.  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+3.7 ARCHITECTURE OF WWW  
+• The Web follows the Client -Server architecture.  
+• The user acts as the client.  
+• The server provides information.  
+ 
+Figure 3.2 WWW Architecture  
+Client 
+↓ 
+Browser 
+↓ 
+Internet 
+↓ 
+Web Server 
+↓ 
+Web Page 
+ 
+3.8 WORKING OF WWW  
+The working of the World Wide Web involves the following steps:  
+Step 1: The user enters a URL.  
+Step 2: The browser sends a request.  
+Step 3: The request travels through the Internet.  
+Step 4: The server receives the request.  
+Step 5: The server sends the web page.  
+Step 6: The browser displays the page.  
+ 
+Figure 3.3 Working of WWW  
+User 
+↓ 
+URL 
+↓ 
+Browser 
+↓ 
+Internet 
+↓ 
+Server 
+↓ 
+Response 
+↓ 
+Browser 
+ 
+Example 
+Suppose a student enters:  
+https://www.google.com  
+The browser requests Google's server.  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Google sends the webpage.  
+The browser displays the page.  
+ 
+3.9 CHARACTERISTICS OF WWW  
+The important characteristics are:  
+• Hypertext-based. 
+• Global accessibility.  
+• Interconnected documents.  
+• Multimedia support.  
+• User-friendly navigation.  
+• Platform independent.  
+ 
+3.10 ADVANTAGES OF WWW  
+• Easy access to information.  
+• Fast communication.  
+• Global connectivity.  
+• Multimedia support.  
+• Educational resources.  
+• E-commerce applications.  
+• Online services.  
+ 
+3.11 LIMITATIONS OF WWW  
+• Security risks.  
+• Fake information.  
+• Cybercrime.  
+• Privacy issues.  
+• Dependency on the Internet.  
+ 
+3.12 APPLICATIONS OF WWW  
+The World Wide Web is widely used in:  
+Education 
+• Online classes  
+• Digital libraries  
+ 
+Banking 
+• Net banking  
+• Online transactions  
+ 
+Healthcare 
+• Online appointments  
+• Medical records  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+E-Commerce 
+• Amazon 
+• Flipkart 
+ 
+Entertainment  
+• YouTube 
+• Netflix 
+ 
+Government Services  
+• Online certificates  
+• Tax services  
+ 
+Artificial Intelligence  
+• ChatGPT 
+• Gemini 
+ 
+Program 3.1 Simple Web Page  
+<!DOCTYPE html>  
+ 
+<html> 
+<head> 
+    <title>WWW Example</title>  
+</head> 
+<body> 
+<h1>World Wide Web</h1>  
+<p>WWW provides information through web pages.</p>  
+</body> 
+</html> 
+ 
+Explanation:  
+• <html> defines the document.  
+• <head> stores metadata.  
+• <title> specifies browser title.  
+• <body> contains visible content.  
+ 
+Observation: The browser interprets HTML pages and displays information to users.  
+ 
+"Can WWW exist without the Internet?"  
+Answer: No. 
+ 
+"Can the Internet exist without WWW?"  
+Answer: Yes. 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+SCENARIO-BASED EXAMPLES  
+ 
+1: A student accesses the university results page.  
+Which system provides the webpage?  
+Answer: WWW. 
+ 
+2: A hospital website contains appointment, doctor, and patient pages.  
+What is this collection called?  
+Answer: Website.  
+ 
+3: A user types www.amazon.com . 
+What identifies this address?  
+Answer: URL.  
+ 
+4: A browser requests information from Google.  
+Which computer provides the webpage?  
+Answer: Web Server.  
+ 
+5: A student clicks "View Results."  
+What enables movement between pages?  
+Answer: Hyperlink.  
+ 
+IMPORTANT POINTS  
+✓ WWW was proposed by Tim Berners -Lee. 
+✓ WWW uses HTML, HTTP, and URLs.  
+✓ WWW follows client -server architecture.  
+✓ Browsers access web servers.  
+✓ Web pages form websites.  
+✓ WWW operates on the Internet.  
+ 
+SUMMARY 
+• WWW is a collection of interconnected web pages.  
+• Tim Berners -Lee invented the Web.  
+• HTML, HTTP, and URL form the foundation of WWW. 
+• Browsers communicate with servers.  
+• WWW provides information through websites.  
+• Modern web applications depend on the World Wide Web.  
+ 
+The World Wide Web transforms the Internet into a global information system by 
+connecting people through websites and web pages.  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+4. HTML (HYPERTEXT MARKUP LANGUAGE)  
+ 
+4.1 INTRODUCTION  
+The World Wide Web contains millions of web pages that provide information, services, 
+entertainment, education, and communication. These web pages are created using a standard 
+language called HTML.  
+ 
+HTML is the fundamental building block of every website. It provides the structure and 
+organization of web pages. Without HTML, web browsers cannot display web content 
+properly. 
+Every website, whether it is Google, Amazon, YouTube, or a university website, uses HTML 
+as its foundation.  
+ 
+4.2 LEARNING OBJECTIVES  
+1. Define HTML.  
+2. Explain the meaning of HyperText.  
+3. Explain the meaning of Markup.  
+4. Understand the purpose of HTML.  
+5. Explain the features of HTML.  
+6. Describe the structure of an HTML document.  
+7. Differentiate HTML from programming languages.  
+ 
+4.3 WHAT IS HTML?  
+Definition: HTML stands for HyperText Markup Language , HTML is a standard markup 
+language used to create and structure web pages.  
+ 
+Definition: HTML is a language used to describe the structure and presentation of 
+information on web pages.  
+ 
+Definition: HTML is a markup language that uses tags and elements to define the structure 
+and content of web documents.  
+ 
+4.4 FULL FORM OF HTML  
+HTML 
+↓ 
+  H – Hyper                                                  
+                          T – Text 
+   M – Markup 
+   L – Language 
+ 
+Each term has a specific meaning.  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+4.5 HYPERTEXT  
+Definition: HyperText refers to text that contains links to other documents or web pages.  
+HyperText allows users to move from one page to another by clicking hyperlinks.  
+ 
+Example: 
+When a user clicks:  
+"Click Here" 
+and another page opens, it is called HyperText.  
+Examples: 
+• Google search results.  
+• Wikipedia links.  
+• University websites.  
+• Online shopping websites.  
+ 
+4.6 TEXT 
+Text refers to the information displayed on a web page.  
+Examples: 
+• Headings 
+• Paragraphs  
+• Articles 
+• News 
+• Descriptions  
+HTML organizes this text for display.  
+ 
+4.7 MARKUP  
+Definition: Markup means adding instructions or tags to text to describe its appearance 
+and structure.  
+ 
+Example: 
+The text: 
+College of Engineering  
+can be marked as:  
+The browser understands that this is a heading.  
+Thus, HTML uses tags to mark content.  
+ 
+4.8 LANGUAGE  
+HTML has: 
+• Rules 
+• Syntax 
+• Structure 
+• Standards 
+Therefore, it is called a language.  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+However, HTML is not a programming language because it does not perform calculations 
+or logical operations.  
+ 
+4.9 WHY HTML WAS DEVELOPED  
+In 1989, Tim Berners -Lee developed HTML.  
+ 
+The objectives were:  
+• Share scientific documents.  
+• Connect information.  
+• Create electronic documents.  
+• Provide a standard document format.  
+HTML solved the problem of sharing information between different computers.  
+ 
+4.10 FEATURES OF HTML  
+The important features of HTML are:  
+1. Easy to learn.  
+2. Platform independent.  
+3. Tag based language.  
+4. Supports hyperlinks.  
+5. Supports multimedia.  
+6. Supports forms.  
+7. Browser independent.  
+8. Free and open standard.  
+ 
+4.11 CHARACTERISTICS OF HTML  
+• Simple syntax.  
+• Case insensitive (HTML5).  
+• Uses tags.  
+• Supports nested elements.  
+• Supports multimedia.  
+• Integrates with CSS and JavaScript.  
+ 
+4.12 HTML DOCUMENT STRUCTURE  
+Every HTML document contains the following sections:  
+1. DOCTYPE Declaration  
+2. HTML Element  
+3. HEAD Section  
+4. TITLE Element  
+5. BODY Section  
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Figure 4.1 Structure of HTML Document  
+HTML Document  
+↓ 
+HEAD 
+↓ 
+TITLE 
+↓ 
+BODY 
+↓ 
+CONTENT 
+ 
+Program 4.1 Basic HTML Program  
+ 
+<!DOCTYPE html>  
+ 
+<html> 
+ 
+<head> 
+ 
+<title>My First Page</title>  
+ 
+</head> 
+ 
+<body> 
+ 
+<h1>Hello World</h1> 
+ 
+<p>This is my first webpage.</p>  
+ 
+</body> 
+ 
+</html> 
+ 
+4.13 WHY HTML IS NOT A PROGRAMMING LANGUAGE  
+HTML cannot:  
+• Perform calculations.  
+• Execute loops.  
+• Make decisions.  
+• Create functions.  
+ 
+HTML only describes content.  
+ 
+Example: 
+HTML: 
+<h1>Welcome</h1>  
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Programming language:  
+if(age > 18)  
+{ 
+   vote(); 
+} 
+ 
+Therefore: HTML is a Markup Language and not a Programming Language.  
+ 
+4.14 ADVANTAGES OF HTML  
+1. Simple and easy.  
+2. Free to use.  
+3. Supported by all browsers.  
+4. Platform independent.  
+5. Integrates with CSS.  
+6. Integrates with JavaScript.  
+7. Suitable for beginners.  
+ 
+4.15 LIMITATIONS OF HTML  
+1. Cannot perform calculations.  
+2. Cannot handle databases.  
+3. Cannot create dynamic applications alone.  
+4. Requires CSS for design.  
+5. Requires JavaScript for interactivity.  
+ 
+4.16 APPLICATIONS OF HTML  
+HTML is used in:  
+• Websites. 
+• Web applications.  
+• Educational portals.  
+• E-commerce sites.  
+• Banking applications.  
+• Hospital systems.  
+• Online examinations.  
+• Government websites.  
+ 
+Examples: 
+• Google 
+• Amazon 
+• YouTube 
+• University websites  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+SCENARIO-BASED EXAMPLES  
+1: A company wants to display information on a browser.  
+Which language should be used?  
+Answer: HTML.  
+ 
+2: A webpage contains clickable text that opens another page.  
+Which term in HTML supports this?  
+Answer: HyperText.  
+ 
+3: A browser interprets instructions enclosed within angle brackets.  
+What are these instructions called?  
+Answer: Tags.  
+ 
+4: A student creates:  
+What type of language is being used?  
+Answer: Markup Language.  
+ 
+5: A developer wants to structure a webpage.  
+Which language is required?  
+Answer: HTML.  
+ 
+IMPORTANT POINTS  
+✓ HTML stands for HyperText Markup Language.  
+✓ HTML was developed by Tim Berners -Lee. 
+✓ HTML is a markup language.  
+✓ HTML uses tags.  
+✓ HTML provides webpage structure.  
+✓ HTML is not a programming language.  
+✓ HTML works with browsers.  
+ 
+SUMMARY 
+• HTML stands for HyperText Markup Language.  
+• HTML is used to create web pages.  
+• HTML uses tags and elements.  
+• HTML provides structure to web pages.  
+• HTML is not a programming language.  
+• HTML forms the foundation of web development.  
+ 
+HTML is the foundation of every web page, providing structure and organization to 
+information displayed on the World Wide Web.  
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+5. HTML ELEMENTS  
+Every webpage available on the World Wide Web is made up of different types of 
+content such as headings, paragraphs, images, hyperlinks, tables, forms, and multimedia. 
+Although these contents appear differently on the screen, a web browser cannot identify 
+their purpose unless they are represented using HTML elements. HTML elements provide the 
+structure and meaning required for the browser to interpret and display webpage content 
+correctly. For this reason, HTML elements are considered the fundamental buildi ng blocks 
+of every webpage.  
+ 
+When a user opens a college website, the browser automatically displays the college name 
+as a heading, admission details as paragraphs, navigation options as hyperlinks, and images 
+in appropriate locations. This is possible because each piece of informatio n is enclosed within 
+a suitable HTML element.  
+ 
+5.2 Need for HTML Elements  
+A browser processes only instructions written in HTML. If a webpage contains only plain 
+text, the browser cannot distinguish between a heading, a paragraph, or a hyperlink. HTML 
+elements solve this problem by defining the purpose of each content item. They  organize 
+the webpage into meaningful sections, improve readability, support accessibility, and help 
+search engines understand webpage content.  
+ 
+For example, consider a college admission webpage. The college name should appear larger 
+than the remaining text, admission details should be displayed as paragraphs, and the 
+online application option should be presented as a clickable link. HTML elements enable the 
+browser to display all these contents appropriately.  
+ 
+Example: 
+A university is designing its admission portal. The homepage must display the university 
+name, admission notification, and an "Apply Online" link. Without HTML elements, the 
+browser cannot identify which content is the title and which content should functi on as a 
+hyperlink. By using appropriate HTML elements, the webpage becomes structured, readable, 
+and user-friendly. 
+ 
+5.3 Definition of HTML Element  
+An HTML element is a complete unit of an HTML document that consists of an opening 
+tag, content, and a closing tag, representing a specific part of a webpage.  
+ 
+Syntax 
+<tagname>Content</tagname>  
+ 
+Example 
+<p>Welcome Students</p>  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+In the above example,  
+Opening Tag: <p> 
+Content: Welcome Students  
+Closing Tag: </p> 
+ 
+The complete structure <p>Welcome Students</p> is called an HTML element . 
+It is important to understand that the browser reads the complete element rather than the 
+content alone. The tags specify the type of content, while the enclosed text represents the 
+information displayed to the user.  
+ 
+5.4 Structure of an HTML Element  
+A standard HTML element consists of three parts:  
+Opening Tag:  Indicates the beginning of an HTML element.  
+Content: Represents the information that will be displayed on the webpage.  
+Closing Tag:  Indicates the end of the HTML element.  
+ 
+Example 
+<h1>ABC College of Engineering</h1>  
+ 
+Structure 
+Opening Tag : <h1>  
+Content : ABC College of Engineering  
+Closing Tag : </h1>  
+ 
+When the browser encounters this element, it recognizes that the enclosed text is the main 
+heading of the webpage and displays it accordingly.  
+ 
+Example 
+A college website needs to display its name as the main heading. The developer uses:  
+<h1>ABC College of Engineering</h1>  
+ 
+The browser interprets <h1> as a heading element and displays the college name in a 
+larger font, making it immediately visible to users.  
+ 
+5.5 HTML Tags and HTML Elements  
+Students often confuse HTML tags with HTML elements. Although these terms are related, 
+they are not identical.  An HTML tag is the instruction enclosed within angle brackets (< 
+>). It indicates the beginning or end of an HTML element.  An HTML element  is the 
+complete structure formed by the opening tag, the content, and the closing tag.  
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Example 
+<h2>Department of Computer Science</h2>  
+Opening Tag : <h2>  
+Content : Department of Computer Science  
+Closing Tag : </h2>  
+ 
+Complete HTML Element :  
+<h2>Department of Computer Science</h2>  
+ 
+Thus, tags are components of an HTML element, while the complete combination forms the 
+element itself.  
+ 
+5.6 Types of HTML Elements  
+HTML elements are commonly classified into the following categories:  
+ 
+5.6.1 Container Elements  
+Container elements contain information between opening and closing tags.  
+Example 1: 
+<p>Welcome Students</p>  
+ 
+Since the paragraph contains text enclosed between <p> and </p>, it is called a container 
+element. 
+ 
+Example 2: 
+<div>Department Information</div>  
+ 
+Example 
+A hospital website displays patient instructions using paragraph elements because the 
+instructions contain descriptive text enclosed within opening and closing tags.  
+ 
+5.6.2 Empty Elements  
+Empty elements do not contain any content. They perform a specific function without 
+requiring a closing tag.  
+ 
+Examples 
+<br> 
+Creates a line break.  
+<hr> 
+ 
+Creates a horizontal line.  
+<img src="college.jpg">  
+Displays an image.  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Example 
+A college website inserts a line break between the college name and address using the 
+<br> element.  
+ 
+5.6.3 Nested Elements  
+When one HTML element is placed inside another HTML element, it is called a nested 
+element. 
+ 
+Example 
+<body> 
+ 
+<h1>ABC College</h1>  
+ 
+<p>Admissions Open</p>  
+ 
+</body> 
+Here, the <h1> and <p> elements are nested inside the <body> element.  
+Nested elements help organize webpage content logically.  
+ 
+5.6.4 Block-Level Elements  
+ 
+Block-level elements always begin on a new line and occupy the available horizontal width.  
+ 
+Example 
+ 
+<h1>ABC College</h1>  
+<p>Department of Artificial Intelligence</p>  
+The heading and paragraph appear on separate lines because both are block -level elements.  
+ 
+5.6.5 Inline Elements  
+ 
+Inline elements occupy only the required space and continue on the same line without 
+creating a new line.  
+ 
+Example 
+ 
+<p>Welcome to <span>HTML</span> Programming.</p>  
+ 
+The <span> element highlights only the word HTML while remaining within the same line.  
+ 
+Example 
+An online shopping website displays:  "Price: ₹999" Only the price is highlighted using the 
+<span> element without affecting the surrounding text.  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+5.7 HTML Program  
+The following program demonstrates the use of different HTML elements.  
+<!DOCTYPE html>  
+<html> 
+ 
+<head> 
+    <title>HTML Elements</title>  
+</head> 
+ 
+<body> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+<p>Admissions are open for the academic year 2026.</p>  
+ 
+<p>Visit the <a href="admission.html">Admission Portal</a> for online registration.</p>  
+ 
+<hr> 
+ 
+<p>Contact Us<br>Phone: 9876543210</p>  
+ 
+</body> 
+ 
+</html> 
+ 
+Program Explanation  
+The <h1> element displays the main heading. The <p> elements display descriptive 
+information. The <a> element creates a hyperlink for online admission. The <hr> element 
+inserts a horizontal line, while <br> moves the phone number to the next line. Together , 
+these elements create a simple and well -structured webpage.  
+ 
+5.8 Scenario -Based Questions  
+ 
+Scenario 1 
+A college wants to display its name as the largest text on the homepage.  
+Question: Which HTML element should be used?  
+Answer: <h1>ABC College</h1>  
+ 
+Scenario 2 
+A hospital website wants to display patient instructions in sentence form.  
+Question: Which HTML element is suitable?  
+Answer: <p>Take the prescribed medicine twice a day.</p>  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Scenario 3 
+A shopping website wants to highlight only the product price without affecting the remaining 
+text. 
+Question: Which HTML element is appropriate?  
+Answer: <span> ₹999</span> 
+ 
+Scenario 4 
+A webpage needs to display the company logo.  
+Question: Which HTML element should be used?  
+Answer: <img src="logo.png">  
+ 
+5.9 Important Questions  
+ 
+Question 1: What is an HTML element?  
+Answer: An HTML element is a complete unit of an HTML document consisting of an 
+opening tag, content, and a closing tag.  
+ 
+Question 2: Differentiate between an HTML tag and an HTML element.  
+Answer: An HTML tag is an instruction enclosed within angle brackets, whereas an HTML 
+element is the complete structure consisting of the opening tag, content, and closing tag.  
+ 
+Question 3: What is a nested element?  
+Answer: A nested element is an HTML element placed inside another HTML element.  
+ 
+5.10 Summary  
+ 
+HTML elements provide the basic structure of every webpage. They help browsers identify 
+and display different types of content such as headings, paragraphs, hyperlinks, and 
+images. A standard HTML element consists of an opening tag, content, and a closing 
+tag. Depending on their purpose, HTML elements are classified as container elements, empty 
+elements, nested elements, block -level elements, and inline elements. A clear understanding of 
+HTML elements forms the foundation for learning HTML tags, attributes,  and webpage 
+design. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+6. HTML Tags and Attributes  
+ 
+6.1 Introduction  
+ 
+HTML elements define the structure of a webpage, but they are created using HTML tags. 
+Tags identify the beginning and end of an element, while attributes provide additional 
+information about that element. Together, tags and attributes help browsers display webpage 
+content correctly and enable developers to control the behaviour and appearance of HTML 
+elements. 
+ 
+For example, when an image is displayed on a webpage, the browser must know where the 
+image is stored. This information is provided through an attribute within the <img> tag.  
+ 
+6.2 HTML Tags  
+ 
+Definition: An HTML tag is a predefined keyword enclosed within angle brackets (< >) 
+that instructs the web browser how to interpret and display webpage content.  
+ 
+HTML tags are the basic commands of HTML. They identify different webpage components 
+such as headings, paragraphs, tables, forms, images, and hyperlinks. Most HTML tags are 
+written in pairs, consisting of an opening tag and a closing tag.  
+ 
+ Syntax 
+<tagname>Content</tagname>  
+ 
+Example 
+<h1>Welcome Students</h1>  
+ 
+In the above example , 
+Opening Tag : <h1>  
+Content : Welcome Students  
+Closing Tag : </h1>  
+ 
+The browser reads these tags and displays the enclosed content as a heading.  
+ 
+6.3 Types of HTML Tags  
+ 
+HTML tags are broadly classified into two categories.  
+ 
+6.3.1 Paired Tags  
+ 
+Paired tags consist of an opening tag and a corresponding closing tag. The content is 
+enclosed between these two tags.  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+Example 
+ 
+<p>HTML is a Markup Language.</p>  
+Other examples include:  
+<h1>Heading</h1>  
+ 
+<title>Web Page</title>  
+ 
+<div>Content</div>  
+Scenario-Based Example  
+A college website displays the department name as a heading. Since the heading contains 
+text, the developer uses paired tags.  
+ 
+<h2>Department of Computer Science</h2>  
+ 
+6.3.2 Empty (Unpaired) Tags  
+ 
+Empty tags do not contain any content and therefore do not require a closing tag. They 
+perform a specific function immediately.  
+ 
+Examples 
+<br> 
+ 
+<hr> 
+ 
+<img src="college.jpg">  
+ 
+The <br> tag inserts a line break.  
+The <hr> tag displays a horizontal line.  
+The <img> tag displays an image.  
+ 
+Scenario-Based Example  
+A hospital website displays the hospital logo at the top of every page. The developer uses 
+the <img> tag because it displays an image without enclosing any content.  
+ 
+6.4 HTML Attributes  
+ 
+Definition: An HTML attribute is a property that provides additional information about an 
+HTML element and modifies its behaviour or appearance.  
+ 
+Attributes are always written inside the opening tag and usually consist of a name and 
+a value. 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Syntax 
+<tagname attribute="value">Content</tagname>  
+ 
+Example 
+<a href="https://www.xyzcollege.edu">Visit College Website</a>  
+ 
+Here, 
+Attribute Name : href  
+Attribute Value : https://www.xyzcollege.edu  
+The href attribute tells the browser the destination of the hyperlink.  
+ 
+6.5 Common HTML Attributes  
+Some commonly used HTML attributes are:  href 
+Specifies the destination address of a hyperlink.  
+ 
+Example 
+<a href="admission.html">Apply Online</a>  
+Src - Specifies the location of an image, audio, or video file.  
+ 
+ 
+Example 1:  
+ 
+<img src="logo.png">  
+alt 
+ 
+Provides alternative text if an image cannot be displayed.  
+ 
+Example 2:  
+<img src="college.jpg" alt="College Building">  
+id 
+ 
+Assigns a unique identifier to an HTML element.  
+ 
+Example 3: 
+<p id="intro">Welcome Students</p>  
+class 
+Groups multiple HTML elements for applying common styles.  
+ 
+Example 4: 
+<p class="notice">Admissions Open</p>  
+ 
+6.6 HTML Program Using Tags and Attributes  
+ 
+<!DOCTYPE html>  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+<html> 
+ 
+<head> 
+    <title>HTML Tags and Attributes</title>  
+</head> 
+ 
+<body> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+<p>Admissions are open for 2026.</p>  
+ 
+<img src="college.jpg" alt="College Campus">  
+ 
+<br> 
+ 
+<a href="admission.html">Apply Online</a>  
+ 
+</body> 
+ 
+</html> 
+ 
+Program Explanation  
+The <h1> tag displays the college name as the main heading. The <p> tag displays 
+admission information. The <img> tag displays the college image using the src attribute, 
+while the alt attribute provides alternative text. The <br> tag inserts a line break, and 
+the <a> tag creates a hyperlink using the href attribute.  
+ 
+ 
+6.7 Scenario -Based Questions  
+ 
+Scenario 1 
+A university website wants students to move from the homepage to the online admission 
+page. 
+Question: Which HTML tag and attribute should be used?  
+Answer: 
+<a href="admission.html">Apply Online</a>  
+ 
+Scenario 2 
+A shopping website wants to display a product image.  
+Question: Which HTML tag and attribute are required?  
+Answer: 
+<img src="mobile.jpg" alt="Mobile Phone">  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Scenario 3 
+A webpage needs to move the next sentence to a new line.  
+Question: Which HTML tag should be used?  
+Answer: 
+<br> 
+ 
+Scenario 4 
+A company website wants to identify a paragraph uniquely for styling or scripting.  
+Question: Which attribute should be used?  
+Answer: 
+<p id="company">Welcome to ABC Pvt. Ltd.</p>  
+ 
+6.8 Important Questions  
+ 
+Question 1: What is an HTML tag?  
+Answer: An HTML tag is a predefined keyword enclosed within angle brackets that instructs 
+the browser how to display webpage content.  
+ 
+Question 2: What is an HTML attribute?  
+Answer: An HTML attribute is a property that provides additional information about an 
+HTML element.  
+ 
+Question 3: Differentiate between an HTML tag and an HTML attribute.  
+Answer: An HTML tag defines an HTML element, whereas an HTML attribute provides 
+additional information or modifies the behaviour of that element.  
+ 
+Question 4: Name any four commonly used HTML attributes.  
+Answer: href, src, alt, and id.  
+ 
+6.9 Summary  
+ 
+HTML tags are the fundamental instructions used to create webpage elements, while HTML 
+attributes provide additional information that controls the behaviour or appearance of those 
+elements. Understanding tags and attributes is essential for developing stru ctured, interactive, 
+and user-friendly web pages. In the next topic, we will learn how HTML headings and 
+paragraphs help organize textual content on a webpage.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+7. HTML Headings and Paragraphs  
+7.1 Introduction  
+Every webpage contains textual information that must be presented in a clear and organized 
+manner. Whether it is a college website, an online shopping portal, or a news website, 
+information is usually divided into titles, headings, subheadings, and paragra phs. HTML 
+provides specific elements to organize text so that users can easily understand the content. 
+The <h1> to <h6> elements are used to create headings of different importance, while the 
+<p> element is used to display paragraphs. Proper use of heading s and paragraphs 
+improves readability, accessibility, and search engine optimization (SEO).  
+ 
+7.2 HTML Headings  
+Definition: HTML headings are predefined elements used to define titles and subheadings 
+on a webpage. They help organize content into different levels of importance.  
+ 
+HTML provides six heading levels, from <h1> to <h6>. The <h1> element represents the 
+highest and most important heading, whereas <h6> represents the lowest heading level.  
+ 
+Syntax 
+<h1>Main Heading</h1>  
+ 
+Example 
+<h1>ABC College of Engineering</h1>  
+ 
+<h2>Department of Artificial Intelligence</h2>  
+ 
+<h3>Faculty Information</h3>  
+The browser displays <h1> as the largest heading and gradually decreases the size and 
+importance from <h2> to <h6>. 
+ 
+Why are Heading Levels Important?  
+Headings organize webpage content into logical sections. They help users quickly identify the 
+main topic and its subtopics. Search engines also use headings to understand the structure 
+of a webpage, making proper heading usage important for SEO.  
+ 
+Example 
+A university website displays the university name, department name, and laboratory details.  
+<h1>ABC University</h1>  
+ 
+<h2>Department of Computer Science</h2>  
+ 
+<h3>Artificial Intelligence Laboratory</h3>  
+Here, the browser understands the hierarchy of information and displays it accordingly.  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+7.3 HTML Paragraphs  
+Definition: An HTML paragraph is a block -level element used to display textual information 
+in the form of sentences or paragraphs on a webpage.  
+ 
+Paragraphs are created using the <p> element. Each paragraph begins on a new line and 
+automatically leaves a small amount of space before and after it.  
+ 
+Syntax 
+<p>Paragraph Content</p>  
+ 
+Example 
+<p>ABC College of Engineering offers undergraduate and postgraduate programs in various 
+disciplines. < /p>. The browser displays the enclosed text as a paragraph with proper 
+spacing. 
+ 
+Importance of Paragraphs  
+Paragraphs improve the readability of webpages by presenting information in a structured 
+manner. Long blocks of continuous text become easier to read when divided into paragraphs.  
+ 
+Example 
+A hospital website provides health guidelines to patients. Instead of displaying all information 
+as a single block of text, each guideline is written as a separate paragraph, making it 
+easier for patients to read and understand.  
+ 
+7.4 Difference Between Headings and Paragraphs  
+Headings are used to introduce a topic or section, whereas paragraphs provide detailed 
+information about that topic.  
+ 
+Example, 
+<h1>Artificial Intelligence</h1>  
+ 
+<p>Artificial Intelligence is a branch of computer science that enables machines to perform 
+tasks requiring human intelligence. < /p> 
+ 
+7.5 HTML Program Using Headings and Paragraphs  
+<!DOCTYPE html>  
+ 
+<html> 
+ 
+<head> 
+ 
+<title>Headings and Paragraphs</title>  
+ 
+</head> 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+<body> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+<h2>Department of Computer Science</h2>  
+ 
+<p>Admissions are open for the academic year 2026. Students can apply through the 
+online admission portal.</p>  
+ 
+<h2>Courses Offered</h2>  
+ 
+<p>The department offers undergraduate, postgraduate, and research programmes in Computer 
+Science.</p> 
+ 
+</body> 
+ 
+</html> 
+ 
+Program Explanation  
+The <h1> element displays the college name as the main heading. The <h2> elements divide 
+the webpage into meaningful sections. The <p> elements provide detailed information related 
+to each heading. This combination creates a well -structured and readable webpage.  
+ 
+7.6 Scenario -Based Questions  
+Scenario 1 
+A college website wants to display the college name as the most important title.  
+Question: Which HTML element should be used?  
+Answer: 
+<h1>ABC College of Engineering</h1>  
+ 
+Scenario 2 
+A news website displays the article title followed by the news content.  
+Question: Which HTML elements are suitable?  
+Answer: 
+<h1>Heavy Rainfall in Bengaluru</h1>  
+ 
+<p>Several parts of the city experienced heavy rainfall throughout the day.</p>  
+ 
+Scenario 3 
+An educational website displays chapter titles followed by detailed explanations.  
+Question: Which HTML elements should be used?  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Answer: 
+Headings should be created using <h1> to <h6>, and explanations should be written using 
+the <p> element. 
+ 
+Scenario 4 
+A company website wants to organize information into different sections such as "About 
+Us", "Services", and "Contact".  
+Question: Which HTML element is suitable for displaying these section titles?  
+Answer: 
+Heading elements ( <h1> to <h6>) should be used depending on the importance of each 
+section. 
+ 
+7.7 Important Questions  
+Question 1: What are HTML headings?  
+Answer: HTML headings are elements used to define titles and subheadings on a webpage. 
+They range from <h1> to <h6>. 
+ 
+Question 2: Which HTML heading represents the highest level?  
+Answer: <h1> represents the highest and most important heading.  
+ 
+Question 3: What is an HTML paragraph?  
+Answer: An HTML paragraph is a block -level element used to display textual information 
+in sentence or paragraph form using the <p> element. 
+ 
+Question 4: Why are headings important?  
+Answer: Headings organize webpage content, improve readability, and help search engines 
+understand the structure of the webpage.  
+ 
+Question 5: Which HTML element is used to display normal textual information?  
+Answer: The <p> element. 
+ 
+7.8 Summary 
+ 
+HTML headings and paragraphs are essential elements for organizing textual content on a 
+webpage. Headings define the structure and hierarchy of information, while paragraphs provide 
+detailed explanations. Proper use of these elements improves readability, accessibility, and 
+search engine optimization. In the next topic, we will learn how HTML Hyperlinks and Lists  
+help users navigate webpages and organize information efficiently.  
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+8. HTML Hyperlinks and Lists  
+8.1 Introduction  
+Modern websites consist of multiple webpages connected together. For example, a college 
+website contains separate pages for Home, About Us, Departments, Admissions, Faculty, 
+and Contact Us. A user can move from one page to another simply by clicking a link . 
+Similarly, information such as course names, product features, or instructions is often 
+displayed in an organized manner using lists. HTML provides hyperlinks for navigation and 
+lists for presenting related information in a structured format. These elements improve user 
+experience and make webpages easier to understand.  
+ 
+8.2 HTML Hyperlinks  
+Definition: A hyperlink is an HTML element that connects one webpage to another webpage, 
+document, image, email address, or external website.  
+ 
+Hyperlinks are created using the <a> (anchor) element. When a user clicks a hyperlink, the 
+browser opens the specified destination. The destination is defined using the href attribute. 
+ 
+Syntax 
+<a href="URL">Link Text</a>  
+ 
+Example 
+<a href="admission.html">Apply Online</a>  
+In the above example,  
+<a> creates the hyperlink.  
+href specifies the destination page.  
+"Apply Online" is the clickable text displayed on the webpage.  
+ 
+Example 
+A college website provides an "Apply Online" option on its homepage. When students click 
+the link, they should be redirected to the admission page.  
+<a href="admission.html">Apply Online</a>  
+The browser opens admission.html  when the user clicks the link.  
+ 
+8.3 Types of Hyperlinks  
+Hyperlinks can connect different types of resources depending on the requirement.  
+Internal Hyperlink  
+An internal hyperlink connects one webpage to another webpage within the same website.  
+ 
+Example 
+<a href="about.html">About Us</a>  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Example 
+A university website contains separate pages for "Home", "Departments", and "Contact". 
+Clicking "Departments" opens another page within the same website.  
+ 
+External Hyperlink  
+An external hyperlink connects to another website.  
+Example 
+<a href="https://www.w3.org">W3C Website</a>  
+ 
+Example 
+A college website provides a link to the AICTE official website for students seeking 
+additional information.  
+ 
+Email Hyperlink  
+An email hyperlink opens the user's default email application.  
+Example 
+<a href="mailto:info@abccollege.edu">Email Us</a>  
+Example 
+A student wants to contact the admission office by clicking an email link instead of 
+typing the email address manually.  
+ 
+8.4 HTML Lists  
+Definition: An HTML list is a collection of related items displayed in a structured format.  
+Lists make information easier to read and understand. They are commonly used to display 
+menus, product features, instructions, departments, and services.  
+ 
+HTML provides three types of lists:  
+• Ordered List 
+• Unordered List  
+• Description List  
+ 
+8.5 Ordered List  
+Definition: An ordered list displays items in a specific sequence using numbers or letters.  
+It is created using the <ol> element, and each list item is defined using the <li> element. 
+ 
+Syntax 
+<ol> 
+ 
+<li>Item 1</li>  
+ 
+<li>Item 2</li>  
+ 
+</ol> 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+Example 
+<ol> 
+ 
+<li>Registration</li>  
+ 
+<li>Document Verification</li>  
+ 
+<li>Fee Payment</li>  
+ 
+</ol> 
+ 
+The browser displays:  
+1. Registration 
+2. Document Verification  
+3. Fee Payment  
+ 
+ 
+Example 
+A college admission portal displays the admission process step by step. Since the sequence 
+is important, an ordered list is used.  
+ 
+8.6 Unordered List  
+Definition: An unordered list displays items using bullets when the order of items is not 
+important. It is created using the <ul> element. 
+ 
+Syntax 
+<ul> 
+ 
+<li>Item 1</li>  
+ 
+<li>Item 2</li>  
+ 
+</ul> 
+ 
+Example 
+<ul> 
+ 
+<li>Computer Science</li>  
+ 
+<li>Artificial Intelligence</li>  
+ 
+<li>Data Science</li>  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+</ul> 
+The browser displays bullet points for each department.  
+ 
+Example 
+A university website lists the departments offered by the institution. Since the departments 
+have no specific order, an unordered list is suitable.  
+ 
+8.7 Description List  
+Definition: A description list displays a term along with its corresponding description.  
+It uses the <dl>, <dt>, and <dd> elements. 
+ 
+Syntax 
+<dl> 
+ 
+<dt>Term</dt>  
+ 
+<dd>Description</dd>  
+ 
+</dl> 
+ 
+Example 
+<dl> 
+ 
+<dt>HTML</dt>  
+ 
+<dd>HyperText Markup Language</dd>  
+ 
+<dt>WWW</dt>  
+ 
+<dd>World Wide Web</dd>  
+ 
+</dl> 
+ 
+Example 
+An educational website explains technical terms and their meanings. A description list helps 
+present the information clearly.  
+ 
+8.8 HTML Program  
+<!DOCTYPE html>  
+ 
+<html> 
+ 
+<head> 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+<title>Hyperlinks and Lists</title>  
+ 
+</head> 
+ 
+<body> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+<p>Quick Links</p>  
+ 
+<a href="admission.html">Apply Online</a>  
+ 
+<h2>Departments</h2>  
+ 
+<ul> 
+ 
+<li>Computer Science</li>  
+ 
+<li>Artificial Intelligence</li>  
+ 
+<li>Information Technology</li>  
+ 
+</ul> 
+ 
+<h2>Admission Process</h2>  
+ 
+<ol> 
+ 
+<li>Register Online</li>  
+ 
+<li>Upload Documents</li>  
+ 
+<li>Pay Fees</li>  
+ 
+</ol> 
+ 
+</body> 
+ 
+</html> 
+ 
+Explanation 
+The <a> element creates a hyperlink to the admission page. The <ul> element displays the 
+list of departments using bullets, while the <ol> element presents the admission procedure 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+in a numbered sequence. Together, these elements make the webpage easy to navigate and 
+understand. 
+ 
+8.9 Scenario -Based Questions  
+Scenario 1 
+A college website wants students to move from the homepage to the online admission page.  
+Question: Which HTML element should be used?  
+Answer: 
+<a href="admission.html">Apply Online</a>  
+ 
+Scenario 2 
+A shopping website wants to display product features as bullet points.  
+Question: Which HTML list is suitable?  
+Answer: 
+An unordered list ( <ul>). 
+ 
+Scenario 3 
+A university website displays the admission procedure in the correct sequence.  
+Question: Which HTML list is appropriate?  
+Answer: 
+An ordered list ( <ol>). 
+ 
+Scenario 4 
+An educational website explains programming terms with their meanings.  
+Question: Which HTML list should be used?  
+Answer: 
+A description list ( <dl>). 
+ 
+8.10 Important Questions with Answers  
+Question 1: What is a hyperlink?  
+Answer: A hyperlink is an HTML element that connects one webpage to another webpage, 
+document, or website.  
+ 
+Question 2: Which HTML element is used to create hyperlinks?  
+Answer: The <a> (anchor) element.  
+ 
+Question 3: What is the purpose of the href attribute? 
+Answer: It specifies the destination address of a hyperlink.  
+ 
+Question 4: Name the three types of HTML lists.  
+Answer: Ordered List, Unordered List, and Description List.  
+ 
+Question 5: Which HTML element is used to create an ordered list?  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Answer: The <ol> element. 
+ 
+8.11 Summary  
+Hyperlinks and lists are essential HTML elements that improve webpage navigation and 
+content organization. Hyperlinks allow users to move between webpages and websites, while 
+lists present related information in a clear and structured manner. Depending on the 
+requirement, HTML provides ordered lists, unordered lists, and description lists. Proper use 
+of hyperlinks and lists makes webpages more user -friendly, organized, and easier to navigate. 
+In the next topic, we will learn how HTML Tables  are used to display information in 
+rows and columns.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+9. HTML Tables  
+9.1 Introduction  
+In many web applications, information needs to be presented in a systematic and organized 
+manner. For example, a college website displays student details, a hospital website maintains 
+patient records, and an e -commerce website lists product information. Di splaying such 
+information as plain text makes it difficult to read and compare. HTML solves this 
+problem by providing tables, which organize data into rows and columns. Tables improve 
+readability and help users quickly locate and compare information.  
+ 
+9.2 HTML Tables  
+Definition: An HTML table is a collection of related data arranged in rows and columns 
+using HTML table elements.  
+ 
+A table consists of rows and columns. Each row contains one or more cells that store 
+related information. HTML tables are created using the <table> element, while rows and 
+cells are represented using <tr>, <th>, and <td> elements. 
+ 
+9.3 Structure of an HTML Table  
+An HTML table is created using different elements, each having a specific purpose.  
+ 
+<table>                               - Defines the complete table.  
+<tr> (Table Row)               - Represents a row in the table.  
+<th> (Table Heading)         - Represents the heading of a column. By default, 
+browsers display   
+                                               table headings in 
+bold and center alignment.  
+ 
+<td> (Table Data)               - Represents the actual data stored in each cell 
+of the table.  
+ 
+Example 
+ 
+<table> 
+ 
+<tr> 
+ 
+<th>Student Name</th>  
+ 
+<th>Course</th>  
+ 
+</tr> 
+ 
+<tr> 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+<td>Rahul</td>  
+ 
+<td>B.Tech AI</td>  
+ 
+</tr> 
+ 
+</table> 
+In the above example,  
+• <table> creates the table.  
+• <tr> creates two rows.  
+• <th> creates the column headings.  
+• <td> stores the student information.  
+ 
+9.4 Why Are HTML Tables Used?  
+Tables are used whenever related information needs to be displayed in a structured format. 
+They improve readability and make comparison easier because information is arranged into 
+rows and columns.  
+ 
+For example, a university website may display student attendance, examination results, or 
+faculty details using tables. Similarly, online shopping websites use tables to compare 
+product specifications, prices, and availability.  
+ 
+Example 
+A college wants to display faculty information on its website.  
+ 
+Instead of writing:  
+Ravi – Professor 
+Anita – Associate Professor  
+Kiran – Assistant Professor  
+the information can be displayed in a table.  
+ 
+<table> 
+ 
+<tr> 
+ 
+<th>Faculty Name</th>  
+ 
+<th>Designation</th>  
+ 
+</tr> 
+ 
+<tr> 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+<td>Ravi</td>  
+ 
+<td>Professor</td>  
+ 
+</tr> 
+ 
+<tr> 
+ 
+<td>Anita</td>  
+ 
+<td>Associate Professor</td>  
+ 
+</tr> 
+ 
+<tr> 
+ 
+<td>Kiran</td>  
+ 
+<td>Assistant Professor</td>  
+ 
+</tr> 
+ 
+</table> 
+The table presents the information in a much clearer and organized manner.  
+ 
+9.5 Table Border  
+By default, HTML tables may not display borders in older examples commonly found in 
+textbooks. A border helps distinguish rows and columns, making the table easier to read.  
+ 
+Example 
+<table border="1">  
+ 
+<tr> 
+ 
+<th>Course</th>  
+ 
+<th>Duration</th>  
+ 
+</tr> 
+ 
+<tr> 
+ 
+<td>B.Tech</td>  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+<td>4 Years</td>  
+ 
+</tr> 
+ 
+</table> 
+ 
+The browser displays a table with visible borders around each cell.  
+ 
+Note: In modern HTML5 development, borders are usually applied using CSS instead of 
+the border attribute. However, the border attribute is still commonly used in introductory 
+HTML examples to help beginners understand table structure.  
+ 
+9.6 HTML Program  
+ 
+<!DOCTYPE html>  
+ 
+<html> 
+ 
+<head> 
+ 
+<title>Student Information</title>  
+ 
+</head> 
+ 
+<body> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+<table border="1">  
+ 
+<tr> 
+ 
+<th>Student Name</th>  
+ 
+<th>Department</th>  
+ 
+<th>Year</th>  
+ 
+</tr> 
+ 
+<tr> 
+ 
+<td>Rahul</td>  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+<td>Artificial Intelligence</td>  
+ 
+<td>II</td>  
+ 
+</tr> 
+ 
+<tr> 
+ 
+<td>Priya</td>  
+ 
+<td>Computer Science</td>  
+ 
+<td>I</td>  
+ 
+</tr> 
+ 
+<tr> 
+ 
+<td>Karan</td>  
+ 
+<td>Data Science</td>  
+ 
+<td>III</td>  
+ 
+</tr> 
+ 
+</table> 
+ 
+</body> 
+ 
+</html> 
+Explanation 
+The <table> element creates the table structure. The first row contains <th> elements that 
+display the column headings. The remaining rows use <td> elements to display student 
+information. The border="1" attribute makes the table borders visible, helping users read 
+the information easily.  
+ 
+9.7 Scenario -Based Questions  
+Scenario 1 
+A hospital website wants to display patient details such as Patient ID, Name, and Doctor 
+in an organized format.  
+Question: Which HTML element should be used?  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Answer: 
+The <table> element. 
+ 
+Scenario 2 
+A university website wants to display the headings "Student Name", "Department", and 
+"CGPA". 
+Question: Which HTML element should be used for the column headings?  
+Answer: 
+The <th> element. 
+ 
+Scenario 3 
+An online shopping website wants to display product details such as Product Name, Price, 
+and Stock Availability.  
+Question: Which HTML element stores the actual product information?  
+Answer: 
+The <td> element. 
+ 
+Scenario 4 
+A school website wants to create a new row for each student's information.  
+Question: Which HTML element should be used?  
+Answer: 
+The <tr> element. 
+ 
+9.8 Important Questions  
+Question 1: What is an HTML table?  
+Answer: An HTML table is a collection of related data arranged in rows and columns 
+using HTML table elements.  
+ 
+Question 2: Which HTML element creates a table?  
+Answer: <table> 
+ 
+Question 3: What is the purpose of the <tr> element? 
+Answer: It defines a row in an HTML table.  
+ 
+Question 4: What is the difference between <th> and <td>? 
+Answer: <th> defines a table heading, whereas <td> stores the actual table data.  
+ 
+Question 5: Why are HTML tables used?  
+Answer: HTML tables are used to organize related information into rows and columns, 
+making the data easier to read, compare, and understand.  
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+9.9 Summary  
+HTML tables provide an effective way to organize and present related information in rows 
+and columns. They are widely used to display student records, employee details, product 
+information, timetables, and reports. The <table>, <tr>, <th>, and <td> elements work 
+together to create a structured table that improves readability and data presentation. In 
+the next topic, we will learn how HTML Forms and Form Controls  are used to collect 
+information from users through webpages.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+10. HTML Forms and Form Controls  
+10.1 Introduction  
+Many websites not only display information but also allow users to enter information. 
+For example, students fill out online admission forms, customers register on shopping 
+websites, patients book hospital appointments, and users log in to online applicatio ns. Such 
+interactions are possible through HTML forms . A form acts as a bridge between the user 
+and the website by collecting information through various input controls. HTML provides 
+different form controls to accept text, passwords, selections, and other user inputs in a 
+structured manner.  
+ 
+10.2 HTML Forms  
+Definition: An HTML form is a section of a webpage used to collect information from 
+users through various input controls.  
+ 
+The information entered in a form can be sent to another webpage for further processing. 
+A form is created using the <form> element, which acts as a container for different form 
+controls. 
+ 
+Syntax 
+<form> 
+ 
+Form Controls  
+ 
+</form> 
+ 
+Example 
+<form> 
+ 
+Student Name:  
+<input type="text">  
+ 
+</form> 
+In this example, the <form> element contains a text box that allows the user to enter 
+a student name.  
+ 
+10.3 Form Attributes  
+The <form> element uses attributes to define how the form behaves.  
+ 
+action Attribute  
+ 
+Definition: The action attribute specifies the webpage that will receive the form data after 
+the user clicks the Submit button.  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Example 
+<form action="admission.html">  
+ 
+In this example, after the user submits the form, the browser opens the admission.html  
+page. 
+ 
+Scenario-Based Example  
+A college admission form collects student details. After clicking the Submit button, the 
+browser opens the admission.html  page where the next step of the admission process begins.  
+ 
+method Attribute  
+ 
+Definition: The method attribute specifies how the browser sends the form data.  
+The two commonly used methods are GET and POST. 
+• GET sends the entered information through the webpage address (URL). It is 
+generally used for non -sensitive information such as search keywords.  
+• POST sends the entered information securely in the request body. It is commonly 
+used for confidential information such as passwords and personal details.  
+ 
+Example 
+<form action="admission.html" method="post">  
+In this example, the browser sends the entered information using the POST method and 
+then opens the admission.html  page. 
+ 
+Note: At this stage, students only need to understand the purpose of the method attribute. 
+Processing the submitted information using server -side technologies will be learned in advanced 
+web development.  
+ 
+10.4 HTML Form Controls  
+HTML provides different form controls to collect different types of user information.  
+ 
+1. Text Box 
+Definition: A text box is a form control used to accept single -line text input from the 
+user. 
+ 
+Example 
+<input type="text">  
+ 
+Example 
+A university admission form asks students to enter their full name. Since the information 
+is entered in a single line, a text box is used.  
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+2. Password Field  
+Definition: A password field is a form control used to accept confidential information by 
+hiding the entered characters.  
+ 
+Example 
+<input type="password">  
+ 
+Scenario-Based Example  
+A student logs into the college portal by entering a password. The characters are hidden 
+to maintain privacy.  
+ 
+3. Radio Button  
+Definition: A radio button is a form control that allows the user to select only one option 
+from a group of options.  
+ 
+Example 
+<input type="radio" name="gender"> Male  
+<input type="radio" name="gender"> Female  
+ 
+Scenario-Based Example  
+A student registration form asks applicants to select their gender. Since only one option 
+can be chosen, radio buttons are used.  
+ 
+4. Checkbox 
+Definition: A checkbox is a form control that allows the user to select one or more 
+options. 
+ 
+Example 
+<input type="checkbox"> Cricket  
+<input type="checkbox"> Football  
+<input type="checkbox"> Music  
+ 
+Scenario-Based Example  
+A college club registration form allows students to join multiple clubs. Therefore, checkboxes 
+are suitable. 
+ 
+5. Drop-down List 
+Definition: A drop-down list is a form control that allows the user to select one option 
+from a predefined list.  
+ 
+Example 
+<select> 
+ 
+<option>B.Tech AI</option>  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+<option>B.Tech CSE</option>  
+ 
+<option>B.Tech IT</option>  
+ 
+</select> 
+ 
+Scenario-Based Example  
+A college admission portal allows students to choose their preferred course from the available 
+programmes. 
+ 
+6. Submit Button  
+Definition: A submit button is used to send the entered form information to the webpage 
+specified in the action attribute. 
+ 
+Example 
+<input type="submit" value="Submit">  
+ 
+7. Reset Button  
+Definition: A reset button clears all the information entered by the user in the form.  
+ 
+Example 
+<input type="reset" value="Reset">  
+ 
+10.5 HTML Program  
+<!DOCTYPE html>  
+<html> 
+ 
+<head> 
+    <title>Student Admission Form</title>  
+</head> 
+ 
+<body> 
+ 
+<h1>ABC College Admission Form</h1>  
+ 
+<form action="admission.html">  
+ 
+Student Name:  
+<input type="text"><br><br>  
+ 
+Password: 
+<input type="password"><br><br>  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Gender: 
+<input type="radio" name="gender"> Male  
+<input type="radio" name="gender"> Female  
+ 
+<br><br> 
+ 
+Course: 
+<select> 
+<option>B.Tech AI</option>  
+<option>B.Tech CSE</option>  
+<option>B.Tech IT</option>  
+</select> 
+ 
+<br><br> 
+ 
+Hobbies: 
+<input type="checkbox"> Sports  
+<input type="checkbox"> Music  
+ 
+<br><br> 
+ 
+<input type="submit" value="Submit">  
+ 
+<input type="reset" value="Reset">  
+ 
+</form> 
+ 
+</body> 
+ 
+</html> 
+ 
+Program Explanation  
+The <form> element creates the admission form. A text box is used to collect the student's 
+name, while the password field accepts confidential information. Radio buttons allow the 
+selection of one gender, the drop -down list helps the student choose a course, and che ckboxes 
+allow multiple hobbies to be selected. Finally, the Submit button sends the form to 
+admission.html , and the Reset button clears all the entered information.  
+ 
+10.6 Scenario -Based Questions  
+Scenario 1 
+A college admission portal asks students to enter their full name.  
+Question: Which HTML form control should be used?  
+Answer: 
+<input type="text">  
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+Scenario 2 
+A banking website asks users to enter their password.  
+Question: Which HTML form control is suitable?  
+Answer: 
+<input type="password">  
+ 
+Scenario 3 
+An online application form asks students to select their branch from a list of available 
+courses. 
+Question: Which HTML form control should be used?  
+Answer: 
+A drop-down list (<select>). 
+ 
+Scenario 4 
+A sports club registration form allows students to select multiple games.  
+Question: Which HTML form control is appropriate?  
+Answer: 
+Checkbox (<input type="checkbox"> ). 
+ 
+Scenario 5 
+A student registration form asks applicants to select either Male or Female. 
+Question: Which HTML form control should be used?  
+Answer: 
+Radio button ( <input type="radio"> ). 
+ 
+10.7 Important Questions  
+ 
+Question 1: What is an HTML form?  
+Answer: An HTML form is a section of a webpage used to collect information from users 
+through various input controls.  
+ 
+Question 2: Which HTML element is used to create a form?  
+Answer: <form> 
+ 
+Question 3: What is the purpose of the action attribute? 
+Answer: It specifies the webpage that receives the form data after the user clicks the 
+Submit button.  
+ 
+Question 4: Differentiate between a radio button and a checkbox.  
+Answer: A radio button allows the selection of only one option, whereas a checkbox allows 
+the selection of one or more options.  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Question 5: Which form control is used to select one option from a predefined list?  
+Answer: The drop-down list (<select>). 
+ 
+10.8 Summary  
+HTML forms are used to collect information from users through webpages. By combining 
+the <form> element with form controls such as text boxes, password fields, radio buttons, 
+checkboxes, drop -down lists, and buttons, developers can create interactive web pages that 
+accept user input. Forms are widely used in online admissions, registrations, login pa ges, 
+surveys, and booking applications. A clear understanding of HTML forms and form controls 
+is essential before learning advanced web technologies.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+11. Semantic HTML Elements  
+ 
+11.1 Introduction  
+As websites became larger and more complex, developers needed a better way to organize 
+webpage content. Earlier, most webpages were designed using generic elements such as <div>, 
+making it difficult to understand the purpose of different sections. HTML5 introduced 
+Semantic HTML elements , which clearly describe the role of each section of a webpage. 
+Semantic elements improve webpage organization, make the code easier to read, enhance 
+accessibility, and help search engines understand webpage content more effectively.  
+ 
+11.2 Semantic HTML Elements  
+Definition: Semantic HTML elements are HTML elements that clearly describe the meaning 
+and purpose of the content they contain.  
+ 
+Unlike generic elements, semantic elements indicate the role of each section of a webpage. 
+For example, a <header> element represents the header section, while a <footer> element 
+represents the footer section.  
+ 
+11.3 Why are Semantic HTML Elements Important?  
+In earlier versions of HTML, developers commonly used <div> elements for every section 
+of a webpage. Although this displayed the webpage correctly, it did not explain the purpose 
+of each section.  
+ 
+Semantic HTML elements solve this problem by giving meaningful names to different parts 
+of the webpage. This improves code readability, makes website maintenance easier, supports 
+screen readers for visually impaired users, and helps search engines identify  important 
+content. 
+ 
+Scenario-Based Example  
+A college website contains the following sections:  
+• College Logo 
+• Navigation Menu  
+• Department Information  
+• Latest News  
+• Contact Information  
+ 
+If every section is created using only <div> elements, another developer may find it 
+difficult to understand the webpage structure. By using semantic elements such as <header>, 
+<nav>, <section>, and <footer>, the purpose of each section becomes immediately clear.  
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+11.4 Common Semantic HTML Elements  
+ 
+1. <header> 
+ 
+Definition: The <header> element represents the introductory section of a webpage or a 
+section of a webpage.  
+ 
+It usually contains the website logo, title, or introductory information.  
+ 
+Example 
+<header> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+</header> 
+ 
+Scenario-Based Example  
+A university website displays its logo and university name at the top of every webpage. 
+This information is placed inside the <header> element. 
+ 
+2. <nav> 
+Definition: The <nav> element represents the navigation section containing links to other 
+webpages. 
+ 
+Example 
+<nav> 
+ 
+<a href="home.html">Home</a>  
+ 
+<a href="about.html">About</a>  
+ 
+<a href="contact.html">Contact</a>  
+ 
+</nav> 
+ 
+Scenario-Based Example  
+A hospital website provides navigation links for Home, Doctors, Appointments, and Contact 
+pages using the <nav> element. 
+ 
+3. <section> 
+Definition: The <section> element represents a thematic section of related content within a 
+webpage. 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Example 
+<section> 
+ 
+<h2>Department of Artificial Intelligence</h2>  
+ 
+<p>Admissions are open.</p>  
+ 
+</section> 
+ 
+Scenario-Based Example  
+A college website displays separate sections for each department. Each department's 
+information is enclosed within a <section> element. 
+ 
+4. <article> 
+Definition: The <article> element represents independent, self -contained content that can be 
+distributed or reused independently.  
+ 
+Example 
+<article> 
+ 
+<h2>Annual Sports Meet</h2>  
+ 
+<p>The annual sports meet will be conducted next month.</p>  
+ 
+</article> 
+ 
+Scenario-Based Example  
+A news portal publishes each news article using the <article> element because every article 
+is independent.  
+ 
+5. <footer> 
+Definition: The <footer> element represents the bottom section of a webpage containing 
+copyright, contact information, or other related details.  
+ 
+Example 
+<footer> 
+ 
+<p>© 2026 ABC College. All Rights Reserved.</p>  
+ 
+</footer> 
+ 
+Scenario-Based Example  
+A company website displays its copyright information and contact details at the bottom 
+of every webpage using the <footer> element. 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+11.5 HTML Program  
+ 
+<!DOCTYPE html>  
+ 
+<html> 
+ 
+<head> 
+ 
+<title>Semantic HTML</title>  
+ 
+</head> 
+ 
+<body> 
+ 
+<header> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+</header> 
+ 
+<nav> 
+ 
+<a href="home.html">Home</a>  
+ 
+<a href="courses.html">Courses</a>  
+ 
+<a href="contact.html">Contact</a>  
+ 
+</nav> 
+ 
+<section> 
+ 
+<h2>Department of Computer Science</h2>  
+ 
+<p>Admissions are open for the academic year 2026.</p>  
+ 
+</section> 
+ 
+<footer> 
+ 
+<p>© 2026 ABC College</p>  
+ 
+</footer> 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+ 
+</body> 
+ 
+</html> 
+ 
+Program Explanation  
+The <header> element displays the college title at the top of the webpage. The <nav> 
+element provides navigation links to different pages. The <section> element contains the 
+department information, while the <footer> element displays the copyright information at 
+the bottom of the webpage. Together, these semantic elements create a well -organized and 
+meaningful webpage structure.  
+ 
+11.6 Scenario -Based Questions  
+Scenario 1 
+A university website wants to display the university logo and title at the top of every 
+webpage. 
+Question: Which semantic HTML element should be used?  
+Answer: 
+<header> 
+ 
+Scenario 2 
+A shopping website wants to provide links for Home, Products, Cart, and Contact.  
+Question: Which semantic HTML element is appropriate?  
+Answer: 
+<nav> 
+ 
+Scenario 3 
+A news website publishes independent news reports.  
+Question: Which semantic HTML element should be used?  
+Answer: 
+<article> 
+ 
+Scenario 4 
+A college website displays copyright information at the bottom of the webpage.  
+Question: Which semantic HTML element should be used?  
+Answer: 
+<footer> 
+ 
+11.7 Important Questions  
+Question 1: What are Semantic HTML elements?  
+Answer: Semantic HTML elements are HTML elements that clearly describe the meaning and 
+purpose of the content they contain.  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Question 2: Why are Semantic HTML elements important?  
+Answer: They improve webpage structure, readability, accessibility, and search engine 
+optimization by providing meaningful content organization.  
+ 
+Question 3: Which semantic HTML element is used for navigation links?  
+Answer: <nav> 
+ 
+Question 4: Which semantic HTML element represents the bottom section of a webpage?  
+Answer: <footer> 
+ 
+Question 5: Which semantic HTML element is used to represent an independent article?  
+Answer: <article> 
+ 
+11.8 Summary  
+Semantic HTML elements provide meaningful structure to webpages by clearly identifying 
+different sections such as the header, navigation menu, content area, articles, and footer. 
+Unlike generic elements, semantic elements improve code readability, accessib ility, website 
+maintenance, and search engine optimization. Using semantic HTML is considered a best 
+practice in modern web development because it creates well -structured, understandable, and 
+user-friendly webpages. In the next topic, we will learn about <div> and <span> Tags, 
+which are commonly used as generic containers for grouping and styling webpage content.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+12. <div> and <span> Tags 
+ 
+12.1 Introduction  
+While developing a webpage, it is often necessary to group related content together for 
+better organization and styling. For example, a webpage may contain a navigation menu, 
+a content area, a sidebar, and a footer. Similarly, within a paragraph, only a fe w words 
+may need special formatting. HTML provides the <div> and <span> elements for this 
+purpose. Although both elements are used to group content, they differ in the way they 
+display information. The <div> element groups larger sections of a webpage, whereas the 
+<span> element groups a small portion of text within a line.  
+ 
+12.2 The <div> Tag 
+Definition: The <div> (Division) tag is a block -level HTML element used to group related 
+content into separate sections of a webpage.  
+ 
+The <div> element does not provide any visual formatting by itself. It acts as a 
+container that helps organize webpage content and is commonly used with CSS and 
+JavaScript to style or manipulate webpage sections.  
+ 
+Syntax 
+<div> 
+ 
+Content 
+ 
+</div> 
+ 
+Example 
+<div> 
+ 
+<h2>Department of Computer Science</h2>  
+ 
+<p>Admissions are open for the academic year 2026.</p>  
+ 
+</div> 
+In this example, the heading and paragraph are grouped into a single section using the 
+<div> element. 
+ 
+Scenario-Based Example  
+A college website contains separate sections for Departments, Facilities, and Placements. Each 
+section can be grouped using a separate <div> element, making the webpage well -organized 
+and easier to design.  
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+12.3 The <span> Tag 
+Definition: The <span> tag is an inline HTML element used to group or identify a small 
+portion of text within a line.  
+ 
+Unlike the <div> element, the <span> element does not begin on a new line. It is mainly 
+used to apply different styles or identify specific words without affecting the surrounding 
+text. 
+ 
+Syntax 
+<span>Content</span>  
+Example 
+<p>Welcome to <span>HTML Programming</span>.</p>  
+ 
+In this example, only the words HTML Programming  are enclosed within the <span> 
+element, while the remaining text continues on the same line.  
+ 
+Scenario-Based Example  
+An online shopping website displays:  
+ 
+Price: ₹999 
+The developer wants to highlight only the price without changing the remaining text. The 
+<span> element is used to identify only the price so that it can be styled separately.  
+ 
+12.4 Difference Between <div> and <span> 
+Although both elements are used for grouping content, they serve different purposes.  
+The <div> element is a block-level element. It always starts on a new line and generally 
+groups larger sections of a webpage.  
+ 
+The <span> element is an inline element. It remains within the same line and is used to 
+group a small portion of text.  
+ 
+Example 
+<div> 
+ 
+<h2>Student Details</h2>  
+ 
+<p>Name: Rahul</p>  
+ 
+</div> 
+ 
+<p>Course: <span>B.Tech AI</span></p>  
+In this example, the <div> element groups the complete student information, whereas the 
+<span> element identifies only the course name within the paragraph.  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+12.5 HTML Program  
+<!DOCTYPE html>  
+ 
+<html> 
+ 
+<head> 
+ 
+<title>Div and Span</title>  
+ 
+</head> 
+ 
+<body> 
+ 
+<div> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+<p>Admissions are open for the academic year 2026.</p>  
+ 
+</div> 
+ 
+<p>Department: <span>Artificial Intelligence</span></p>  
+ 
+</body> 
+ 
+</html> 
+ 
+Program Explanation  
+The <div> element groups the college heading and admission information into one section 
+of the webpage. The <span> element groups only the words Artificial Intelligence  within 
+the paragraph. Although both elements group content, <div> creates a separate block, 
+whereas <span> affects only a part of the text without starting a new line.  
+ 
+12.6 Scenario -Based Questions  
+Scenario 1 
+A college website wants to group the About Us, Departments, and Placements sections 
+separately. Question: Which HTML element should be used?  
+Answer: <div> 
+ 
+Scenario 2 
+A shopping website wants to highlight only the product price within a sentence.  
+Question: Which HTML element is suitable?  
+Answer: <span> 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Scenario 3 
+A university webpage contains multiple sections, each requiring different CSS styles.  
+Question: Which HTML element should be used to group each section?  
+Answer: The <div> element. 
+ 
+Scenario 4 
+A news website wants to highlight only the word Breaking News  within a paragraph.  
+Question: Which HTML element should be used?  
+Answer: The <span> element. 
+ 
+12.7 Important Questions  
+Question 1: What is the purpose of the <div> tag? 
+Answer: The <div> tag is used to group related content into separate sections of a 
+webpage. 
+ 
+Question 2: What is the purpose of the <span> tag? 
+Answer: The <span> tag is used to group or identify a small portion of text within a 
+line. 
+ 
+Question 3: What is the main difference between <div> and <span>? 
+Answer: The <div> element is a block -level element used for grouping larger sections of a 
+webpage, whereas the <span> element is an inline element used for grouping a small portion 
+of text within a line.  
+ 
+Question 4: Which element starts on a new line?  
+Answer: The <div> element. 
+ 
+Question 5: Which element remains on the same line?  
+Answer: The <span> element. 
+ 
+12.8 Summary  
+The <div> and <span> elements are generic HTML containers used to organize webpage 
+content. The <div> element groups larger sections of a webpage and starts on a new line, 
+while the <span> element groups a small portion of text without affecting the line structure. 
+These elements are widely used in modern web development to create well -organized webpages 
+and apply different styles to specific sections of content. In the next topic, we will study 
+Multimedia Elements and HTML5 , where we will learn how HTML5 enables webpages to 
+display audio, video, and other multimedia content without using external plugins.  
+ 
+ 
+ 
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+13. Multimedia Elements and HTML5  
+ 
+13.1 Introduction  
+Modern websites are no longer limited to displaying only text and images. They also 
+provide audio lectures, video tutorials, online meetings, animations, and interactive content. 
+For example, educational websites stream video lectures, music applications p lay songs, and 
+news websites publish video reports. Earlier, displaying multimedia on webpages required 
+external plugins such as Adobe Flash. HTML5 simplified this process by introducing built -
+in multimedia elements that allow browsers to play audio and vi deo directly without additional 
+software. 
+ 
+13.2 Multimedia in HTML  
+Definition: Multimedia refers to the combination of different types of digital content, such 
+as text, images, audio, video, and animations, presented together on a webpage to improve 
+user interaction and learning.  
+ 
+Multimedia makes webpages more attractive, interactive, and informative. It is widely used 
+in educational portals, entertainment websites, online learning platforms, social media 
+applications, and business websites.  
+ 
+Scenario-Based Example  
+An online learning platform provides recorded video lectures and audio explanations for 
+students. Instead of downloading separate media players, students can watch videos and 
+listen to audio directly in their web browsers because of HTML5 multimedia suppor t. 
+ 
+13.3 HTML5 Multimedia Elements  
+HTML5 introduced dedicated elements for embedding multimedia content into webpages. The 
+most commonly used multimedia elements are <audio> and <video>. 
+ 
+13.4 The <audio> Element 
+Definition: The <audio> element is used to embed and play audio files directly within a 
+webpage. 
+ 
+It allows users to play, pause, and control audio without using external software.  
+ 
+Syntax 
+<audio controls>  
+<source src="audio.mp3" type="audio/mpeg">  
+</audio> 
+ 
+Example 
+<audio controls>  
+<source src="welcome.mp3" type="audio/mpeg">  
+</audio> 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+In this example, the browser displays an audio player with controls such as Play, Pause, 
+and Volume. 
+ 
+Scenario-Based Example  
+A college website provides recorded welcome messages from the Principal. Students can listen 
+to the message directly using the <audio> element. 
+ 
+13.5 The <video> Element 
+Definition: The <video> element is used to embed and play video files directly within a 
+webpage. 
+ 
+HTML5 allows users to watch videos without installing external plugins.  
+ 
+Syntax 
+<video width="400" controls>  
+ 
+<source src="video.mp4" type="video/mp4">  
+ 
+</video> 
+ 
+Example 
+<video width="400" controls>  
+ 
+<source src="campus.mp4" type="video/mp4">  
+ 
+</video> 
+ 
+In this example, the browser displays a video player with controls such as Play, Pause, 
+Volume, and Full Screen.  
+ 
+Scenario-Based Example  
+A university uploads a campus tour video on its website. Visitors can watch the video 
+directly on the webpage using the <video> element. 
+ 
+13.6 What is HTML5?  
+Definition: HTML5 is the fifth and the latest major version of HyperText Markup Language, 
+developed to support modern web applications by providing improved structure, multimedia 
+support, graphics, and better user interaction.  
+ 
+HTML5 was introduced to overcome the limitations of earlier HTML versions and to support 
+the growing needs of modern websites. It enables developers to create responsive and 
+interactive webpages without relying on external plugins.  
+ 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+13.7 Features of HTML5  
+HTML5 introduced several important features that simplified modern web development.  
+• Native support for audio and video.  
+• New semantic elements such as <header>, <nav>, <section>, <article>, and <footer>. 
+• Better support for multimedia without external plugins.  
+• Improved form controls.  
+• Better compatibility with modern web browsers.  
+• Support for mobile -friendly and responsive websites.  
+ 
+Scenario-Based Example  
+A university decides to redesign its website. The new website should display video lectures, 
+online application forms, and a mobile -friendly interface. HTML5 provides all these features, 
+making it the preferred choice for modern web development.  
+ 
+13.8 HTML Program  
+<!DOCTYPE html>  
+ 
+<html> 
+ 
+<head> 
+ 
+<title>HTML5 Multimedia</title>  
+ 
+</head> 
+ 
+<body> 
+ 
+<h1>ABC College of Engineering</h1>  
+ 
+<h2>Welcome Message</h2>  
+ 
+<audio controls>  
+ 
+<source src="welcome.mp3" type="audio/mpeg">  
+ 
+</audio> 
+ 
+<h2>Campus Tour</h2>  
+ 
+<video width="400" controls>  
+ 
+<source src="campus.mp4" type="video/mp4">  
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+</video> 
+ 
+</body> 
+ 
+</html> 
+ 
+Program Explanation  
+The webpage displays the college title using the <h1> element. The <audio> element plays 
+the Principal's welcome message, while the <video> element displays the campus tour video. 
+The controls attribute enables the browser to display playback controls such as Play, 
+Pause, and Volume. HTML5 allows both media files to play directly in the browser without 
+requiring external plugins.  
+ 
+13.9 Scenario -Based Questions  
+Scenario 1 
+An educational website wants students to listen to recorded lectures online.  
+Question: Which HTML5 element should be used?  
+Answer: <audio> 
+ 
+Scenario 2 
+A university website wants to display a campus tour video.  
+Question: Which HTML5 element should be used?  
+Answer:   <video> 
+ 
+Scenario 3 
+A company upgrades its website to support multimedia without using Adobe Flash.  
+Question: Which version of HTML provides native multimedia support?  
+Answer: HTML5 
+ 
+Scenario 4 
+A news website wants visitors to watch live video reports directly in the browser.  
+Question: Which HTML5 element is suitable?  
+Answer: 
+<video> 
+ 
+13.10 Important Questions  
+Question 1: What is multimedia?  
+Answer: Multimedia is the combination of different types of digital content such as text, 
+images, audio, video, and animations presented together on a webpage.  
+ 
+Question 2: What is the purpose of the <audio> element? 
+Answer: The <audio> element is used to embed and play audio files directly within a 
+webpage. 
+ 
+  FACULTY NAME:  A VINASH PAL LIDLAAN , ASSISTANT PROFESSOR, DEPT:  AI 
+ 
+ 
+Question 3: What is the purpose of the <video> element? 
+Answer: The <video> element is used to embed and play video files directly within a 
+webpage. 
+ 
+Question 4: What is HTML5?  
+Answer: HTML5 is the fifth and the latest major version of HyperText Markup Language 
+that provides improved support for multimedia, semantic elements, modern web applications, 
+and responsive websites.  
+ 
+Question 5: Name any four features of HTML5.  
+Answer: 
+• Native audio support  
+• Native video support  
+• Semantic HTML elements  
+• Improved form controls  
+ 
+13.11 Summary  
+HTML5 has transformed web development by introducing built -in multimedia support and 
+several modern features that improve website functionality and user experience. The <audio> 
+and <video> elements allow developers to embed media files directly into webpages without 
+relying on external plugins. In addition, HTML5 provides semantic elements, improved 
+forms, and better browser compatibility, making it the standard language for developing 
+modern, interactive, and responsive websites.  
+ 
+ 
