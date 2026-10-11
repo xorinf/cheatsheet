@@ -1,5 +1,7 @@
 # EWP (Essentials of Web Programming) — MASTER CHEATSHEET & SCENARIO INDEX
 
+![alt text](./meow.jpeg)
+
 >  **Exam Goal**: If you are given ANY question or programming scenario, find the exact code snippet below in seconds and implement it immediately.
 
 ---
